@@ -43,22 +43,38 @@ html, body{
 
 
 h1{
-	margin: 0;
+	margin: 0 25px 0;
+	bottom: 20%;
 	color: var(--text-highlight-color);
+	position: absolute;
+	font-size: 12.8vw;
+	font-weight: lighter;
+	line-height: 1.208;
+}
+
+h1 em{
+	font-size: 13.33vw;
+	font-style: normal;
+	font-weight: 800 !important;
 }
 
 h2{
 	font-size: 20px;
-	margin-top: 0;
+	margin-top: 5px;
+	line-height: 1.5;
+	font-weight: 700;
 }
 
 h2 em{
 	color: var(--text-highlight-color);
 	font-style: normal;
+	font-size: 28px;
 }
 
 h3{
 	color: var(--p-text);
+	font-size: 13px;
+	font-weight: 400;
 }
 
 p{
@@ -75,12 +91,15 @@ p{
 
 .top-bar{
 	position: absolute;
+	height: 75px;
+	background: -webkit-linear-gradient(#10031E 100%, rgba(17,3,31,0) 0%);
 }
 
 .banner{
 	height: 100vh;
 	position: relative;
 	top: 0;
+	background: url(images/fb-images/banner1.jpg)
 }
 
 .pull-tab{
