@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+	box-sizing: border-box;
+}
+
+/* ----------------------------------- VARIABLES ----------------------------------- */
+:root {
+  --main-color: #e11b22; /* red */
+  --darkest-color: #191c27; /* dark grey */
+  --darker-color: #DCDCDC; /* lighter grey */
+  --dark-color: #E8E7E6; /* light grey */
+  --light-color: #F4F3F2; /* lightest grey */
+  --light-fg-color: #FCFCFB; /* white */
+  --main-font-color: #181816;
+  --main-font: 'Titillium Web', sans-serif;
+  --text-align: left;
+  --line-height: 1.6;
+}
+
+
+/* ----------------------------------- GLOBAL STUFF ----------------------------------- */
+
+html{
+	scroll-behavior: smooth;
+}
+
+html, body{
+	background-color: var(--dark-color);
+	color: var(--light-fg-color);
+	padding: 0 0 0 0;
+	margin: 0;
+	color: var(--main-font-color);
+	font-family: var(--main-font);
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%;
+}
