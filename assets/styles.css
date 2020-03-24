@@ -46,7 +46,7 @@ h1{
 	margin: 0 25px 0;
 	bottom: 20%;
 	color: var(--text-highlight-color);
-	position: fixed;
+	position: absolute;
 	font-size: 12.8vw;
 	font-weight: lighter;
 	line-height: 1.208;
@@ -88,7 +88,7 @@ h3{
 
 h3.date{
 	position: absolute;
-	left: 63px;
+	left: 60px;
 	top: 12px;
 }
 
@@ -102,7 +102,7 @@ p{
 
 div.top-bar p{
 	position: absolute;
-	right: 16px;
+	right: 14px;
 	font-size: 16px;
 }
 
@@ -113,7 +113,7 @@ div.top-bar p{
 .top-bar{
 	position: absolute;
 	height: 75px;
-	background: linear-gradient(#10031e, #10031e00);
+	background: linear-gradient(#10031e, #10031ecc 40%, #10031e00);
 	z-index: 100;
 	width: 100%;
 }
@@ -123,7 +123,7 @@ div.top-bar p{
 	width: 27px;
 	height: 30px;
 	position: absolute;
-	left: 18px;
+	left: 15px;
 	top: 12px;
 }
 
@@ -182,6 +182,7 @@ div.burger-menu div{
 	bottom: 0;
 	position: absolute;
 	background-color: var(--dark-color);
+	box-shadow: 0 -5px 25px #000;
 }
 
 .tab-line{
@@ -233,7 +234,20 @@ img{
 	top: -150px;
 }
 
+footer{
+	text-align: center;
+	color: #fff;
+}
 
+footer div.info-footer{
+	background-color: var(--main-color);
+}
+
+footer div.sponsors{
+	background-color: var(--black-color);
+	height: 100vw;
+	width: 100%;
+}
 
 
 
