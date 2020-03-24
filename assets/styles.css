@@ -46,10 +46,11 @@ h1{
 	margin: 0 25px 0;
 	bottom: 20%;
 	color: var(--text-highlight-color);
-	position: absolute;
+	position: fixed;
 	font-size: 12.8vw;
 	font-weight: lighter;
 	line-height: 1.208;
+	z-index: 0;
 }
 
 h1 em{
@@ -60,9 +61,10 @@ h1 em{
 
 h2{
 	font-size: 20px;
-	margin-top: 5px;
+	margin-top: 0;
 	line-height: 1.5;
 	font-weight: 700;
+	padding-top: 5px;
 }
 
 h2 em{
@@ -71,10 +73,23 @@ h2 em{
 	font-size: 28px;
 }
 
+h2.countdown{
+	text-align: center;
+	font-size: 30px;
+	color: var(--text-highlight-color);
+	margin: 50px 0;
+}
+
 h3{
 	color: var(--p-text);
-	font-size: 13px;
+	font-size: 11px;
 	font-weight: 400;
+}
+
+h3.date{
+	position: absolute;
+	left: 63px;
+	top: 12px;
 }
 
 p{
@@ -85,6 +100,12 @@ p{
 	font-weight: regular !important;
 }
 
+div.top-bar p{
+	position: absolute;
+	right: 16px;
+	font-size: 16px;
+}
+
 
 
 
@@ -92,18 +113,66 @@ p{
 .top-bar{
 	position: absolute;
 	height: 75px;
-	background: -webkit-linear-gradient(#10031E 100%, rgba(17,3,31,0) 0%);
+	background: linear-gradient(#10031e, #10031e00);
+	z-index: 100;
+	width: 100%;
+}
+
+.logo{
+	background: url('images/icons/logo.svg');
+	width: 27px;
+	height: 30px;
+	position: absolute;
+	left: 18px;
+	top: 12px;
+}
+
+div.burger-menu{
+	width: 34px;
+	top: 17px;
+	position: absolute;
+	right: 50px;
+}
+
+div.burger-menu div{
+	background-color: #fff;
+	height: 4px;
+	border-radius: 100px;
+	margin-bottom: 5px;
+	float: right;
+	display: block;
+}
+
+.bar1{
+	width: 15px;
+}
+
+.bar2{
+	width: 23px;
+}
+
+.bar3{
+	width: 32px;
 }
 
 .banner{
 	height: 100vh;
 	position: relative;
 	top: 0;
-	background: url(images/fb-images/banner1.jpg)
+	background: url('images/fb-images/banner1.jpg');
+	background-size: 150%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.gradient-overlay{
+	background: linear-gradient(#10031e17, #10031e99);
+	height: 100%;
 }
 
 .pull-tab{
-	height: 50px;
+	height: 40px;
 	width: 100vw;
 	border-radius: 24px 24px 0px 0px;
 	border: solid 3px var(--accent-color);
@@ -112,6 +181,7 @@ p{
 	left: -3px;
 	bottom: 0;
 	position: absolute;
+	background-color: var(--dark-color);
 }
 
 .tab-line{
@@ -122,11 +192,46 @@ p{
 	border-radius: 100px;
 }
 
-
 .content{
+	background-color: var(--dark-color);
+	z-index: 2;
+	position: relative;
+}
+
+article{
 	padding: 0 25px;
 }
 
+.img-wrap{
+	height: 100vw;
+}
+
+img{
+	height: 100vw;
+	object-fit: cover;
+	display: block;
+	top: -75px;
+	position: relative;
+}
+
+.gradient-transition-top{
+	background: linear-gradient(#10031e, #10031e00);
+	height: 75px;
+	width: 100%;
+	display: block;
+	z-index: 1;
+	position: relative;
+}
+
+.gradient-transition-bottom{
+	background: linear-gradient(#10031e00, #10031e);
+	height: 75px;
+	width: 100%;
+	display: block;
+	z-index: 1;
+	position: relative;
+	top: -150px;
+}
 
 
 
