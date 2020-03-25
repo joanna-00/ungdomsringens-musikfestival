@@ -251,6 +251,50 @@ footer div.sponsors{
 
 
 
+/* --------------- MOBILE INFO PAGE -----------------------------*/
+
+.sub-banner {
+	height: 40vh;
+	position: relative;
+	top: 0;
+	background: url('images/fb-images/banner1.jpg');
+	background-size: 114%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.sub-gradient-transition-bottom {
+background: linear-gradient(#10031e00, #10031e);
+    height: 42vw;
+    width: 100%;
+    display: block;
+    z-index: 1;
+    position: relative;
+	top: -150px;	
+}
+
+.sub-header {
+	margin: 0vw 3vw -9vw;
+    bottom: 20%;
+    color: var(--text-highlight-color);
+    position: absolute;
+    font-size: 12.8vw;
+    font-weight: lighter;
+    line-height: 1.208;
+    z-index: 2;
+}
+
+.sub-question {
+	font-size: 20px;
+	margin-top: 0;
+	line-height: 1.5;
+	font-weight: 700;
+	padding-top: 5px;
+}
+
+.sub-section{
+	padding: 0 25px;
+}
 
 
 
