@@ -107,9 +107,6 @@ div.top-bar p{
 }
 
 
-
-
-
 .top-bar{
 	position: absolute;
 	height: 75px;
@@ -251,7 +248,7 @@ footer div.sponsors{
 
 
 
-/* --------------- MOBILE INFO PAGE -----------------------------*/
+/* --------------- MOBILE SUB PAGE STYLES -----------------------------*/
 
 .sub-banner {
 	height: 40vh;
@@ -284,18 +281,50 @@ background: linear-gradient(#10031e00, #10031e);
     z-index: 2;
 }
 
+.sub-sectiontop, .sub-section{
+	padding: 0 4vw;
+}
+
 .sub-question {
-	font-size: 20px;
+	font-size: 6vw;
 	margin-top: 0;
+	margin-bottom: .5vw;
 	line-height: 1.5;
 	font-weight: 700;
-	padding-top: 5px;
+	padding-top: 1vw;
 }
 
-.sub-section{
-	padding: 0 25px;
+.sub-tip {
+	color: var(--p-text);
+	font-family: var(--primary-font);
+	font-size: 5vw;
+	font-weight: lighter;
+	margin-top: 0;
+	line-height: 1.5;
 }
 
+
+/* --------------- MOBILE INFO SUBPAGE STYLES -----------------------------*/
+
+hr {
+	width: 90vw;
+	opacity: .7;
+}
+
+.article-header {
+	font-size: 5vw;
+	width: 83vw;
+}
+
+.fas.fa-chevron-down, .fas.fa-chevron-up {
+	color: white;
+	font-size: 8vw;
+    padding-top: 3vw;
+}
+
+#item-container {
+	display: flex;
+}
 
 
 
