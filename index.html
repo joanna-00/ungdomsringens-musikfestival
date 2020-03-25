@@ -9,7 +9,9 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap" rel="stylesheet">
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+	
+	<script src="assets/js/navigation.js" defer></script> 
 	
     <title>Ungdomsringens Festival</title>
 </head>
@@ -24,12 +26,28 @@
 		<div class="top-info">
 			<h3 class="date">06. - 07. 01. 2021<a class="place"> - Aalborg</a></h3>
 		</div>
-		<div class="burger-menu">
-			<div class="bar1"></div>
-			<div class="bar2"></div>
-			<div class="bar3"></div>
+		<div id="burger" class="burger-menu">
+			<div id="menu-icon">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="exit-icon" class="exit hidden">
+				<div class="cross1"></div>
+				<div class="cross2"></div>
+			</div>
 		</div>
 		<p class="lang">DK</p>
+	</div>
+	<div id="navigation" class="nav-overlay hidden">
+		<nav>
+			<ul>
+				<li><a href="index.html" class="active">HOME</a></li>
+				<li><a>FESTIVAL</a></li>
+				<li><a href="info.html">INFO</a></li>
+				<li><a>CONTACT</a></li>
+				<li><a>SIGN-UP</a></li>
+			</ul>
 	</div>
 	<div class="banner">
 		<h1><em>UNGDOMS-<br>RINGENS</em><br>MUSIK-<br>FESTIVAL</h1>
