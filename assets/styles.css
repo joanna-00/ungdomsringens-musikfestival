@@ -266,13 +266,12 @@ background: linear-gradient(#10031e00, #10031e);
     width: 100%;
     display: block;
     z-index: 1;
-    position: relative;
-	top: -150px;	
+    position: absolute;
+	bottom: 0;	
 }
 
 .sub-header {
-	margin: 0vw 3vw -9vw;
-    bottom: 20%;
+    bottom: 10%;
     color: var(--text-highlight-color);
     position: absolute;
     font-size: 12.8vw;
@@ -282,7 +281,7 @@ background: linear-gradient(#10031e00, #10031e);
 }
 
 .sub-sectiontop, .sub-section{
-	padding: 0 4vw;
+	padding: 0 25px;
 }
 
 .sub-question {
@@ -307,7 +306,7 @@ background: linear-gradient(#10031e00, #10031e);
 /* --------------- MOBILE INFO SUBPAGE STYLES -----------------------------*/
 
 hr {
-	width: 90vw;
+	width: 100%;
 	opacity: .7;
 }
 
