@@ -365,7 +365,7 @@ background: linear-gradient(#10031e00, #10031e);
 }
 
 
-/* --------------- MOBILE INFO SUBPAGE STYLES -----------------------------*/
+/* --------------- MOBILE INFO/SIGNUP SUBPAGE STYLES -----------------------------*/
 
 hr {
 	width: 100%;
@@ -395,6 +395,8 @@ hr {
 	font-weight: lighter;
 }
 
+
+/* --------------- MOBILE CONTACT SUBPAGE STYLES ---------------------*/
 
 
 
