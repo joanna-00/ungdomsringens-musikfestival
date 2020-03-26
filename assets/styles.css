@@ -131,7 +131,7 @@ div.burger-menu{
 	right: 50px;
 }
 
-div.burger-menu div{
+div.burger-menu div div{
 	background-color: #fff;
 	height: 4px;
 	border-radius: 100px;
@@ -151,6 +151,68 @@ div.burger-menu div{
 .bar3{
 	width: 32px;
 }
+
+.exit{
+	height: 27px;
+	position: relative;
+}
+
+.cross1{
+	transform: rotate(45deg);
+	width: 32px;
+	top: 10px;
+	position: absolute;
+	margin: 0 !important;
+	right: -4px;
+}
+
+.cross2{
+	transform: rotate(-45deg);
+	width: 32px;
+	top: 10px;
+	position: absolute;
+	margin: 0 !important;
+	right: -4px;
+}
+
+.nav-overlay{
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--dark-color);
+	text-align: center;
+	position: absolute;
+	z-index: 99;
+}
+
+div.nav-overlay nav ul{
+	list-style: none;
+	padding: 0;
+	color: #fff;
+	font-size: 40px;
+	line-height: 2.025;
+	position: relative;
+	top: 110px;
+	margin: 0;
+}
+
+a:hover{
+	color: var(--main-color) !important;
+}
+
+div.nav-overlay nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+div.nav-overlay nav ul li a.active{
+	color: var(--main-color);
+}
+
+.hidden{
+	visibility: hidden;
+}
+
+
 
 .banner{
 	height: 100vh;
@@ -266,13 +328,12 @@ background: linear-gradient(#10031e00, #10031e);
     width: 100%;
     display: block;
     z-index: 1;
-    position: relative;
-	top: -150px;	
+    position: absolute;
+	bottom: 0;	
 }
 
 .sub-header {
-	margin: 0vw 3vw -9vw;
-    bottom: 20%;
+    bottom: 10%;
     color: var(--text-highlight-color);
     position: absolute;
     font-size: 12.8vw;
@@ -282,7 +343,7 @@ background: linear-gradient(#10031e00, #10031e);
 }
 
 .sub-sectiontop, .sub-section{
-	padding: 0 4vw;
+	padding: 0 25px;
 }
 
 .sub-question {
@@ -307,7 +368,7 @@ background: linear-gradient(#10031e00, #10031e);
 /* --------------- MOBILE INFO SUBPAGE STYLES -----------------------------*/
 
 hr {
-	width: 90vw;
+	width: 100%;
 	opacity: .7;
 }
 
