@@ -428,6 +428,7 @@ input {
 	margin-top: 2vw;
 	font-size: 4vw;
 	border-radius: 5px;
+	margin-bottom: 6vw;
 }
 
 label {
@@ -449,7 +450,31 @@ fieldset {
 	border-radius: 5px;
 }
 
+.contact-container {
+	display: flex;
+	margin-top: 10vw;
+}
 
+.contact-name {
+	color: white;
+	margin-bottom: 1vw;
+	margin-top: 1vw;
+}
+
+.contact-info {
+	width: 45vw;
+	height: auto;
+}
+
+.contact-info p {
+	font-size: 3.5vw;
+}
+
+.contact-image {
+	width: 45vw;
+	height: auto;
+	border: 1px solid white;
+}
 
 
 
