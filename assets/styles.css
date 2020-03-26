@@ -343,7 +343,7 @@ background: linear-gradient(#10031e00, #10031e);
 }
 
 .sub-sectiontop, .sub-section{
-	padding: 0 4vw;
+	padding: 0 5vw;
 }
 
 .sub-question {
@@ -374,7 +374,7 @@ hr {
 
 .article-header {
 	font-size: 5vw;
-	width: 78vw;
+	width: 81vw;
 }
 
 .fas.fa-chevron-down {
@@ -398,13 +398,9 @@ hr {
 
 /* --------------- MOBILE CONTACT SUBPAGE STYLES ---------------------*/
 
-.padding {
-	padding: 1vw;
-}
-
 textarea {
 	padding: 1vw;
-    width: 78vw;
+    width: 83vw;
 	height: 50vw;
 	background-color: #52465C;
 	color: white;
@@ -436,7 +432,7 @@ input {
 
 label {
 	display: inline-block;
-    width: 32vw;
+    width: 31vw;
     font-size: 4vw;
 }
 
