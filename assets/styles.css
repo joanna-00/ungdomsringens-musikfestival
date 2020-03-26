@@ -343,7 +343,7 @@ background: linear-gradient(#10031e00, #10031e);
 }
 
 .sub-sectiontop, .sub-section{
-	padding: 0 25px;
+	padding: 0 4vw;
 }
 
 .sub-question {
@@ -408,11 +408,15 @@ textarea {
 	height: 50vw;
 	background-color: #52465C;
 	color: white;
+	margin-top: 3vw;
+	border-radius: 5px;
 }
 
 input {
 	background-color: #52465C;
 	color: white;
+	width: 42vw;
+	border-radius: 2px;
 }
 
 
@@ -426,6 +430,8 @@ input {
 	transition: all .1s ease-out;
 	cursor: pointer;
 	margin-top: 2vw;
+	font-size: 4vw;
+	border-radius: 5px;
 }
 
 label {
@@ -443,7 +449,8 @@ legend {
 }
 
 fieldset {
-	padding: 3vw;
+	padding-top: 3vw;
+	border-radius: 5px;
 }
 
 
