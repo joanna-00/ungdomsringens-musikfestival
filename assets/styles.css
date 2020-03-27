@@ -386,18 +386,21 @@ hr {
 
 .article-header {
 	font-size: 5vw;
-	width: 81vw;
+	width: auto;
 }
 
-.fas.fa-chevron-down {
+i.fas.fa-chevron-down {
 	color: white;
 	font-size: 8vw;
     padding-top: 3vw;
+    position: absolute;
+    right: 0;
 }
 
 .item-container {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .item-description {
@@ -457,6 +460,54 @@ label {
 	box-shadow: 0px 0px 0px 0 rgba(0,0,0,.5);
 }
 
+
+
+
+
+
+
+
+
+
+
+legend {
+	font-size: 4.2vw;
+}
+
+fieldset {
+	padding-top: 3vw;
+	border-radius: 5px;
+	margin: 0;
+}
+
+.contact-container {
+	display: flex;
+	margin-top: 10vw;
+	margin-bottom: 10vw;
+}
+
+.contact-name {
+	color: white;
+	margin-bottom: 1vw;
+	margin-top: 1vw;
+}
+
+.contact-info {
+	width: 45vw;
+	height: auto;
+}
+
+.contact-info p {
+	font-size: 3.5vw;
+}
+
+.contact-image {
+	width: 45vw;
+	height: 55vw;
+	border: 1px solid white;
+}
+
+
 /* --------------- GRID ITEMS -----------------------------*/
 
 .item-a{
@@ -473,9 +524,6 @@ label {
 .item-d{
 	grid-area: img2;
 }
-
-
-
 
 
 
@@ -647,47 +695,52 @@ label {
 		left: 10vw;
 		top: 14vw;
 	}
+	
+	.sub-sectiontop, .sub-section {
+	    padding: 0 0 0 4vw;
+	    width: 70vw;
+	}
+	
+	.sub-banner{
+		background: url('images/fb-images/banner2.jpg');
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
+	.sub-gradient-transition-bottom{
+		height: 10vw;
+		display: none;
+	}
+	
+	h1.sub-header em{ 
+		font-size: 6vw !important;
+	}
+	
+	h2.sub-question{
+		font-size: 3vw;
+		margin-top: 5vw;
+	}
+	
+	.sub-tip{
+		font-size: 20px;
+	}
+	
+	.article-header{
+		font-size: 26px;
+	}
+	
+	i.fas.fa-chevron-down {
+	    font-size: 47px;
+	    padding-top: 12px;
+	    right: 10px;
+	}
+	
+	.sub-section{
+		margin-bottom: 200px;
+	}
 }
-
-
-
-legend {
-	font-size: 4.2vw;
-}
-
-fieldset {
-	padding-top: 3vw;
-	border-radius: 5px;
-	margin: 0;
-}
-
-.contact-container {
-	display: flex;
-	margin-top: 10vw;
-	margin-bottom: 10vw;
-}
-
-.contact-name {
-	color: white;
-	margin-bottom: 1vw;
-	margin-top: 1vw;
-}
-
-.contact-info {
-	width: 45vw;
-	height: auto;
-}
-
-.contact-info p {
-	font-size: 3.5vw;
-}
-
-.contact-image {
-	width: 45vw;
-	height: 55vw;
-	border: 1px solid white;
-}
-
 
 /* --------------- MOBILE LINE-UP SUBPAGE STYLES ---------------------*/
 
