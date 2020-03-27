@@ -40,7 +40,7 @@ html, body{
 }
 
 
-
+/* --------------- TEXT -----------------------------*/
 
 h1{
 	margin: 0 25px 0;
@@ -106,6 +106,8 @@ div.top-bar p{
 	font-size: 16px;
 }
 
+/* --------------- TOP-BAR -----------------------------*/
+
 
 .top-bar{
 	position: absolute;
@@ -151,6 +153,9 @@ div.burger-menu div div{
 .bar3{
 	width: 32px;
 }
+
+/* --------------- NAVIGATION -----------------------------*/
+
 
 .exit{
 	height: 27px;
@@ -213,6 +218,9 @@ div.nav-overlay nav ul li a.active{
 }
 
 
+/* --------------- BANNER -----------------------------*/
+
+
 
 .banner{
 	height: 100vh;
@@ -251,6 +259,10 @@ div.nav-overlay nav ul li a.active{
 	background-color: var(--accent-color);
 	border-radius: 100px;
 }
+
+
+/* --------------- CONTENT -----------------------------*/
+
 
 .content{
 	background-color: var(--dark-color);
@@ -393,6 +405,200 @@ hr {
 	font-family: var(--primary-font);
 	font-size: 3.8vw;
 	font-weight: lighter;
+}
+
+
+
+/* --------------- GRID ITEMS -----------------------------*/
+
+.item-a{
+	grid-area: section1;
+}
+
+.item-b{
+	grid-area: img1;
+}
+.item-c{
+	grid-area: section2;
+}
+
+.item-d{
+	grid-area: img2;
+}
+
+
+
+
+
+
+/* --------------- MEDIA QUERIES -----------------------------*/
+
+@media (min-width: 768px) {
+	h3.date {
+	    left: 36vw;
+	    top: 30px;
+	    margin: 0;
+	    font-size: 2.7vw;
+	    font-weight: 100;
+	}
+	
+	p{
+		font-size: 18px;
+		line-height: 1.6;
+		font-weight: 100;
+	}
+	
+	.logo {
+	    width: 58px;
+	    height: 66px;
+	    left: 50px;
+	    top: 16px;
+	}
+	
+	.bar1{
+		width: 27.3px;
+	}
+	
+	.bar2{
+		width: 41.86px;
+	}
+	
+	.bar3{
+		width: 58.24px;
+	}
+	
+	div.burger-menu div div {	
+	    height: 8px;
+	    margin-bottom: 7px;	
+	}
+	
+	div.burger-menu {		
+		top: 30px;
+		right: 70px;
+	}
+	
+	div.top-bar p{
+		font-size: 27px;
+	}
+	
+	span{
+		display: none;
+	}
+	
+	h1{
+		font-size: 7.1vw;
+		margin-left: 4vw;
+	}
+	
+	h1 em{
+		font-size: 7.6vw;
+	}
+	
+	h2{
+		font-size: 3vw;
+		line-height: 1.42;
+	}
+	
+	h2 em{
+		font-size: 4vw;
+	}
+	
+	.item-a p{
+		padding-bottom: 10vw;
+	}
+	
+	.item-c{
+		padding-top: 5vw;
+	}
+	
+	.banner{
+		background: url('images/fb-images/banner2.jpg');
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	
+	.pull-tab{
+		background: linear-gradient(#10031e00, #10031ecc 60%, #10031e);
+		height: 75px;
+		width: 100%;
+		border: none;
+		box-shadow: none;
+		left: 0px;
+	}
+	
+	.tab-line{
+		display: none;
+	}
+	
+	img{
+		height: 100%;
+		width: 100%;
+		border-radius: 10px;
+		box-shadow: 5px -5px 25px #000;
+		top: 0;
+	}
+	
+	.gradient-transition-top{
+		display: none;
+	}
+	
+	.gradient-transition-bottom{
+		display: none;
+	}
+	
+	.img-wrap{
+		height: 51vw;
+	}
+	
+	article{
+		padding: 0 3.5vw;
+	}
+	
+	.container-section1{
+		margin-top: 2vw;
+		display: grid;
+		grid-template-columns: 4vw 43vw 6vw 43vw 4vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		    ". section1 img1 img1 .";
+	}
+	
+	.container-section2{
+		display: grid;
+		grid-template-columns: 4vw 43vw 6vw 43vw 4vw;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		    ". img2 img2 section2 .";
+		top: -50px;
+		position: relative;
+	}
+	
+	.countdown-wrap{
+		height: 50vw;
+		background: url('images/fb-images/audience.jpg');
+		background-size: cover;
+		background-position: center top;
+		background-repeat: no-repeat;
+		position: relative;
+	}
+	
+	.countdown-overlay{
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(#10031e, #10031e00);
+		display: block;
+	}
+	
+	h2.countdown{
+		position: absolute;
+		font-size: 7vw;
+		text-align: center;
+		width: 80vw;
+		left: 10vw;
+		top: 14vw;
+	}
 }
 
 
