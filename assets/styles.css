@@ -124,7 +124,7 @@ div.top-bar p{
 	position: absolute;
 	left: 15px;
 	top: 12px;
-}
+å}
 
 div.burger-menu{
 	width: 34px;
@@ -531,10 +531,10 @@ fieldset {
 
 @media (min-width: 768px) {
 	h3.date {
-	    left: 36vw;
+	    left: 38vw;
 	    top: 30px;
 	    margin: 0;
-	    font-size: 2.7vw;
+	    font-size: 2vw;
 	    font-weight: 100;
 	}
 	
@@ -545,10 +545,11 @@ fieldset {
 	}
 	
 	.logo {
-	    width: 58px;
-	    height: 66px;
-	    left: 50px;
-	    top: 16px;
+	    width: 38px;
+		height: 46px;
+		left: 50px;
+		top: 16px;
+		background-repeat: no-repeat;
 	}
 	
 	.bar1{
@@ -672,7 +673,7 @@ fieldset {
 	}
 	
 	.countdown-wrap{
-		height: 50vw;
+		height: 30vw;
 		background: url('images/fb-images/audience.jpg');
 		background-size: cover;
 		background-position: center top;
@@ -693,7 +694,8 @@ fieldset {
 		text-align: center;
 		width: 80vw;
 		left: 10vw;
-		top: 14vw;
+		padding: 0;
+		top: 10vw;
 	}
 	
 	.sub-sectiontop, .sub-section {
@@ -740,6 +742,13 @@ fieldset {
 	.sub-section{
 		margin-bottom: 200px;
 	}
+	
+/*
+	div.countdown-wrap div.gradient-transition-bottom{
+		height: 10vw;
+		display: block;
+	}
+*/
 }
 
 /* --------------- MOBILE LINE-UP SUBPAGE STYLES ---------------------*/
