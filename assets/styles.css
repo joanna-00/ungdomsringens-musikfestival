@@ -448,11 +448,13 @@ legend {
 fieldset {
 	padding-top: 3vw;
 	border-radius: 5px;
+	margin: 0;
 }
 
 .contact-container {
 	display: flex;
 	margin-top: 10vw;
+	margin-bottom: 10vw;
 }
 
 .contact-name {
@@ -472,10 +474,10 @@ fieldset {
 
 .contact-image {
 	width: 45vw;
-	height: auto;
+	height: 55vw;
 	border: 1px solid white;
 }
 
 
-
+/* --------------- MOBILE LINE-UP SUBPAGE STYLES ---------------------*/
 
