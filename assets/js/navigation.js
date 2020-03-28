@@ -8,3 +8,10 @@ burger.addEventListener('click', function(){
 	exit.classList.toggle('hidden');
 	menu.classList.toggle('hidden');
 });
+
+let languageBtn = document.getElementsByClassName('lang')[0];
+let popup = document.getElementsByClassName('lang-popup')[0];
+
+languageBtn.addEventListener('click', function(){
+	popup.classList.toggle('hidden');
+});
