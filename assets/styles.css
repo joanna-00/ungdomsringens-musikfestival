@@ -674,6 +674,10 @@ textarea[type=text] {
 	border: 1px solid white;
 }
 
+.contact-reps {
+	margin-left: 5vw;
+}
+
 /* --------------- MOBILE LINE-UP SUBPAGE STYLES ---------------------*/
 
 
@@ -1187,6 +1191,7 @@ textarea[type=text] {
 .contact-reps {
 	width: 45vw;
 	padding-left: 10vw;
+	margin-left: 2vw;
 }
 
 }
