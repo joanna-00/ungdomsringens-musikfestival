@@ -104,7 +104,7 @@ p {
 	font-family: var(--secondary-font);
 	color: var(--p-text);
 	line-height: var(--line-height);
-	font-size: 14px;
+	font-size: 3.5vw;
 	font-weight: regular !important;
 }
 
@@ -364,6 +364,10 @@ footer div.sponsors {
 	width: 100%;
 }
 
+.info-footer hr {
+	width: 80vw;
+}
+
 /* --------------- MOBILE SUB PAGE STYLES -----------------------------*/
 
 .sub-banner {
@@ -458,35 +462,39 @@ i.fas.fa-chevron-down {
 /* --------------- MOBILE CONTACT SUBPAGE STYLES ---------------------*/
 
 textarea {
-	padding: 1vw;
+	padding: 2vw;
 	width: 83vw;
 	height: 50vw;
 	background-color: #52465C;
-	color: white;
 	margin-top: 3vw;
 	border-radius: 5px;
+	color: white;
 }
 
 input {
 	background-color: #52465C;
-	color: white;
 	width: 42vw;
+	height: 7vw;
+	color: white;
 	border-radius: 2px;
 }
 
 .btn {
-	padding: 4vw 12vw;
 	background-color: var(--main-color);
+	font-family: var(--primary-font);
 	border: none;
 	color: white;
 	font-weight: bold;
 	box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .5);
 	transition: all .1s ease-out;
 	cursor: pointer;
-	margin-top: 2vw;
+	margin-top: 3vw;
 	font-size: 4vw;
 	border-radius: 5px;
 	margin-bottom: 6vw;
+	width: 30vw;
+	height: 10vw;
+	padding: 3vw;
 }
 
 label {
@@ -507,6 +515,34 @@ fieldset {
 	padding-top: 3vw;
 	border-radius: 5px;
 	margin: 0;
+}
+
+input::placeholder {
+	color: white;
+	font-family: var(--primary-font);
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+textarea::placeholder {
+	color: white;
+	font-family: var(--primary-font);
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+input[type=text] {
+	color: white;
+	font-family: var(--primary-font);
+	font-size: 13px;
+	font-weight: lighter;
+}
+
+textarea[type=text] {
+	color: white;
+	font-family: var(--primary-font);
+	font-size: 13px;
+	font-weight: lighter;
 }
 
 .contact-container {
@@ -566,7 +602,7 @@ fieldset {
 	}
 	
 	p{
-		font-size: 16px;
+		font-size: 17px;
 		line-height: 1.6;
 		font-weight: 100;
 	}
