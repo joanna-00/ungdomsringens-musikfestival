@@ -668,6 +668,8 @@ hr {
 }
 
 .article-header {
+	margin: 0;
+	padding: 2vw 0;
 	display: block;
 	font-size: 5vw;
 	width: 100%;
