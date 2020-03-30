@@ -223,6 +223,16 @@ div.nav-overlay nav ul li a.active {
 	visibility: hidden;
 }
 
+.hidden-display {
+	height: 0 !important;
+	opacity: 0 !important;
+	overflow: hidden;
+	margin: 0;
+	/* transition-property: height;
+	transition-duration: 1s; */
+	/* display: none; */
+}
+
 .lang-popup{
 	height: 100vh;
 	width: 100%;
@@ -532,8 +542,9 @@ hr {
 }
 
 .article-header {
+	display: block;
 	font-size: 5vw;
-	width: auto;
+	width: 100%;
 }
 
 i.fas.fa-chevron-down {
@@ -550,14 +561,23 @@ i.fas.fa-chevron-down {
 	position: relative;
 }
 
+section.sub-sectiion > hr:last-of-type {
+	margin-bottom: 50px !important
+}
+
 .item-description {
 	line-height: 1.8;
 	font-family: var(--primary-font);
 	font-size: 3.8vw;
 	font-weight: lighter;
+	height: 40vw;
+	opacity: 1;
+	transition-property: height, opacity;
+	transition-duration: 1s, 1s;
+	margin: 0;
 }
 
-#hidden {
+.hidden {
 	display: none;
 }
 
@@ -655,6 +675,10 @@ textarea[type=text] {
 	margin-bottom: 10vw;
 }
 
+.contact-header {
+	font-size: 4vw;
+}
+
 .contact-name {
 	color: white;
 	margin-bottom: 1vw;
@@ -685,21 +709,17 @@ textarea[type=text] {
 .content section.tables {
 	width: 100vw;
 	margin: 0;
-
 }
 
-.wrapper {
+.table-wrapper {
 	position: relative;
+	margin-bottom: 100px;
 }
 
 .scrollable {
 	overflow: scroll;
 	position: relative;
 }
-
-.scrollable::-webkit-scrollbar {
-	/* display: none; */
-  }
 
 .scrollable::-webkit-scrollbar {
 	width: 10px;
@@ -710,7 +730,7 @@ textarea[type=text] {
   }
   
   ::-webkit-scrollbar-thumb {
-	background: #888;
+	background: #52465C;
 	border-radius: 10px;
   }
 
@@ -733,7 +753,6 @@ textarea[type=text] {
 
 table {
 	color: var(--p-text);
-	margin-bottom: 50px;
 	font-size: 5vw;
 
 }
@@ -969,7 +988,7 @@ td {
 	}
 	
 	.sub-sectiontop, .sub-section {
-		padding: 0 0 0 4vw;
+		padding: 0 4vw;
 		width: 70vw;
 	}
 	.sub-banner {
@@ -1099,7 +1118,7 @@ hr {
 
 .article-header {
 	font-size: 2vw;
-	width: auto;
+	width: 100%;
 }
 
 i.fas.fa-chevron-down {
@@ -1120,11 +1139,16 @@ i.fas.fa-chevron-down {
 .item-description {
 	line-height: 1.8;
 	font-family: var(--primary-font);
-	font-size: 3.8vw;
+	font-size: 2.2vw;
 	font-weight: lighter;
+	height: 20vw;
+	opacity: 1;
+	transition-property: height, opacity;
+	transition-duration: .7s, .7s;
+	margin: 0;
 }
 
-#hidden {
+.hidden {
 	display: none;
 }
 
@@ -1220,6 +1244,10 @@ textarea[type=text] {
 	display: flex;
 	margin-top: 3vw;
 	margin-bottom: 3vw;
+}
+
+.contact-header {
+	font-size: 2vw;
 }
 
 .contact-name {
