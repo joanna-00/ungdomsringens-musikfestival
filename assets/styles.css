@@ -680,8 +680,59 @@ textarea[type=text] {
 
 /* --------------- MOBILE LINE-UP SUBPAGE STYLES ---------------------*/
 
+.content section.tables {
+	width: 100vw;
+	margin: 0;
 
+}
 
+.wrapper {
+	position: relative;
+}
+
+.scrollable {
+	overflow: scroll;
+	position: relative;
+}
+
+.scroll-arrow-wrapper {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	background:	linear-gradient(90deg, #10031e00, #10031e);
+	height: 100%;
+	width: 10vw;
+}
+
+.scroll-arrow {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	font-size: 10vw;
+	z-index: 2;
+}
+
+table {
+	color: var(--p-text);
+	margin-bottom: 50px;
+	font-size: 5vw;
+
+}
+
+th, td {
+	padding: 20px;
+	border-bottom: 1px solid white;
+	/* border-right: 1px solid white; */
+}
+
+th {
+	text-align: left;
+	text-transform: uppercase;
+}
+
+td {
+	font-weight: lighter;
+}
 
 
 
@@ -1069,6 +1120,7 @@ textarea {
 	margin-top: 2vw;
 	border-radius: 5px;
 	color: white;
+	border: none;
 }
 
 input {
@@ -1077,6 +1129,7 @@ input {
 	height: 4vw;
 	color: white;
 	border-radius: 2px;
+	border: none;
 }
 
 .btn {
@@ -1194,4 +1247,16 @@ textarea[type=text] {
 	margin-left: 2vw;
 }
 
+/* LANDING PAGE DESKTOP */
+
+table {
+	font-size: 2.2vw;
+
 }
+
+.scroll-arrow {
+	font-size: 5vw;
+}
+}
+
+
