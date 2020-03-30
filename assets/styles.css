@@ -313,9 +313,10 @@ div.lang{
 	height: 100vh;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 150%;
 	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
