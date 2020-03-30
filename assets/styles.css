@@ -206,7 +206,7 @@ div.nav-overlay nav ul {
 	margin: 0;
 }
 
-a:hover {
+div.nav-overlay nav ul li a:hover {
 	border-bottom: solid 2px #fff !important;
 }
 
@@ -217,6 +217,7 @@ div.nav-overlay nav ul li a {
 
 div.nav-overlay nav ul li a.active {
 	color: var(--main-color);
+	border: none;
 }
 
 .hidden {
@@ -411,18 +412,46 @@ footer {
 	color: #fff;
 }
 
+.info-footer i{
+	width: 60px;
+}
+
+.info-footer hr{
+	width: 100%;
+	color: #fff;
+	opacity: 1;
+	border: #fff solid 1px;
+	margin: 20px 0;
+}
+
+.info-footer nav ul{
+	padding: 0;
+	list-style: none;
+	color: #fff;
+}
+
+.info-footer nav ul li{
+	margin-bottom: 15px;
+}
+
+.info-footer nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.info-footer nav ul li:hover{
+	text-decoration: underline;
+}
+
 footer div.info-footer {
 	background-color: var(--main-color);
+	padding: 20px;
 }
 
 footer div.sponsors {
 	background-color: var(--black-color);
-	height: 100vw;
 	width: 100%;
-}
-
-.info-footer hr {
-	width: 80vw;
+	padding: 20px;
 }
 
 hr{
@@ -478,6 +507,15 @@ hr{
 	margin: 0 auto;
 }
 
+.logo2{
+	width: 250px;
+	height: 80px;
+	background: url('images/icons/logo2.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
 
 /* --------------- MOBILE SUB PAGE STYLES -----------------------------*/
 /* --------------- GLOBAL MOBILE SUB PAGE STYLES -----------------------------*/
@@ -486,7 +524,7 @@ hr{
 	height: 75vw;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 114%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -799,11 +837,13 @@ td {
 
 /* --------------- LANDING PAGE DESKTOP -----------------------------*/
 	h3.date {
-	    left: 38vw;
-	    top: 30px;
-	    margin: 0;
-	    font-size: 2vw;
-	    font-weight: 100;
+	    left: 0;
+	top: 30px;
+	margin: 0;
+	font-size: 2vw;
+	font-weight: 100;
+	width: 100%;
+	text-align: center;
 	}
 	
 	p{
@@ -818,19 +858,7 @@ td {
 		top: 16px;
 		background-repeat: no-repeat;
 	}
-	.bar1 {
-		width: 27.3px;
-	}
-	.bar2 {
-		width: 41.86px;
-	}
-	.bar3 {
-		width: 58.24px;
-	}
-	div.burger-menu div div {
-		height: 8px;
-		margin-bottom: 7px;
-	}
+
 	div.burger-menu {
 		top: 30px;
 		right: 70px;
@@ -1051,7 +1079,7 @@ td {
 	height: 35vw;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 114%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1068,7 +1096,7 @@ td {
 }
 
 .sub-header {
-	bottom: 10%;
+	bottom: 35%;
 	color: var(--text-highlight-color);
 	position: absolute;
 	font-size: 8vw;
