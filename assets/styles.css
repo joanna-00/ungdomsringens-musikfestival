@@ -93,6 +93,7 @@ h2 {
 	line-height: 1.5;
 	font-weight: 700;
 	padding-top: 5px;
+	text-transform: uppercase;
 }
 
 h2 em {
@@ -106,6 +107,7 @@ h2.countdown {
 	font-size: 30px;
 	color: var(--text-highlight-color);
 	margin: 50px 0;
+	text-transform: lowercase;
 }
 
 h3 {
@@ -118,6 +120,11 @@ h3.date {
 	position: absolute;
 	left: 60px;
 	top: 12px;
+}
+
+h3.date a{
+	text-decoration: none;
+	color: #fff;
 }
 
 p {
@@ -334,6 +341,10 @@ div.lang {
 	background-attachment: fixed;
 }
 
+.banner i{
+	display: none;
+}
+
 .gradient-overlay {
 	background: linear-gradient(#10031e17, #10031e99);
 	height: 100%;
@@ -429,6 +440,55 @@ img {
 	top: -150px;
 }
 
+section.newsletter{
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 0 25px;
+}
+
+section.newsletter p{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.newsletter div.input-container{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	height: 60px;
+	background-color: var(--main-color);
+	border-radius: 14px;
+	position: relative;
+}
+
+.newsletter div.input-container input{
+	position: absolute;
+	left: 5px;
+	border-radius: 14px;
+	top: 5px;
+	height: 50px;
+	width: 75%;
+	padding: 0 20px 0;
+	background-color: var(--dark-color);
+}
+
+.newsletter div.input-container input::placeholder{
+	font-size: 5vw;
+	font-family: var(--secondary-font);
+}
+
+.newsletter div.input-container div{
+	background: url('images/icons/arrow-right.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 15%;
+	position: absolute;
+	right: 12px;
+	height: 100%;
+}
+
 /* --------------- MOBILE FOOTER STYLES -----------------------*/
 
 footer {
@@ -439,6 +499,7 @@ footer {
 .info-footer i {
 	font-size: 60px;
 	margin: 10px 10px;
+	cursor: pointer;
 }
 
 .info-footer hr {
@@ -592,7 +653,7 @@ hr {
 
 .sub-tip {
 	color: var(--p-text);
-	font-family: var(--primary-font);
+	font-family: var(--secondary-font);
 	font-size: 5vw;
 	font-weight: lighter;
 	margin-top: 0;
@@ -983,7 +1044,15 @@ td {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 	}
-
+	
+	.banner i{
+		display: block;
+		text-align: center;
+		width: 100%;
+		position: absolute;
+		bottom: 50px;
+	}
+	
 	.pull-tab {
 		background: linear-gradient(#10031e00, #10031ecc 60%, #10031e);
 		height: 75px;
@@ -1135,6 +1204,7 @@ td {
 		float: left;
 		width: 100%;
 		text-align: center;
+		margin-bottom: 100px;
 	}
 
 	section.newsletter p {
@@ -1166,9 +1236,18 @@ td {
 		font-size: 20px;
 		font-family: var(--secondary-font);
 	}
-
-	.newsletter div.input-container div {}
-
+	
+	.newsletter div.input-container div{
+		background: url('images/icons/arrow-right.svg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 15%;
+		position: absolute;
+		right: 20px;
+		height: 100%;
+	}
+	
 	footer {
 		display: block;
 		float: left;
@@ -1219,6 +1298,14 @@ td {
 		font-weight: 700;
 		padding-top: 1vw;
 	}
+/* .sub-tip {
+	color: var(--p-text);
+	font-family: var(--secondary-font);
+	font-size: 2.2vw;
+	font-weight: lighter;
+	margin-top: 0;
+	line-height: 1.5;
+} */
 
 	.sub-tip {
 		color: var(--p-text);
