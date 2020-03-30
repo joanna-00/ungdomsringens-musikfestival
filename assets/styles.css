@@ -105,7 +105,7 @@ p {
 	color: var(--p-text);
 	line-height: var(--line-height);
 	font-size: 3.5vw;
-	font-weight: regular !important;
+	font-weight: normal;
 }
 
 div.top-bar p {
@@ -837,7 +837,7 @@ td {
 
 /* --------------- LANDING PAGE DESKTOP -----------------------------*/
 	h3.date {
-	    left: 0;
+	left: 0;
 	top: 30px;
 	margin: 0;
 	font-size: 2vw;
@@ -849,7 +849,7 @@ td {
 	p{
 		font-size: 17px;
 		line-height: 1.6;
-		font-weight: 100;
+		/* font-weight: 100; */
 	}
 	.logo {
 		width: 38px;
