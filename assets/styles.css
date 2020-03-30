@@ -402,6 +402,37 @@ footer {
 	color: #fff;
 }
 
+.info-footer i{
+	width: 60px;
+}
+
+.info-footer hr{
+	width: 100%;
+	color: #fff;
+	opacity: 1;
+	border: #fff solid 1px;
+	margin: 20px 0;
+}
+
+.info-footer nav ul{
+	padding: 0;
+	list-style: none;
+	color: #fff;
+}
+
+.info-footer nav ul li{
+	margin-bottom: 15px;
+}
+
+.info-footer nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.info-footer nav ul li:hover{
+	text-decoration: underline;
+}
+
 footer div.info-footer {
 	background-color: var(--main-color);
 	padding: 20px;
@@ -411,10 +442,6 @@ footer div.sponsors {
 	background-color: var(--black-color);
 	width: 100%;
 	padding: 20px;
-}
-
-.info-footer hr {
-	width: 80vw;
 }
 
 hr{
@@ -791,11 +818,13 @@ td {
 
 /* --------------- LANDING PAGE DESKTOP -----------------------------*/
 	h3.date {
-	    left: 38vw;
-	    top: 30px;
-	    margin: 0;
-	    font-size: 2vw;
-	    font-weight: 100;
+	    left: 0;
+	top: 30px;
+	margin: 0;
+	font-size: 2vw;
+	font-weight: 100;
+	width: 100%;
+	text-align: center;
 	}
 	
 	p{
@@ -810,19 +839,7 @@ td {
 		top: 16px;
 		background-repeat: no-repeat;
 	}
-	.bar1 {
-		width: 27.3px;
-	}
-	.bar2 {
-		width: 41.86px;
-	}
-	.bar3 {
-		width: 58.24px;
-	}
-	div.burger-menu div div {
-		height: 8px;
-		margin-bottom: 7px;
-	}
+
 	div.burger-menu {
 		top: 30px;
 		right: 70px;
