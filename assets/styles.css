@@ -206,7 +206,7 @@ div.nav-overlay nav ul {
 	margin: 0;
 }
 
-a:hover {
+div.nav-overlay nav ul li a:hover {
 	border-bottom: solid 2px #fff !important;
 }
 
@@ -217,6 +217,7 @@ div.nav-overlay nav ul li a {
 
 div.nav-overlay nav ul li a.active {
 	color: var(--main-color);
+	border: none;
 }
 
 .hidden {
@@ -403,12 +404,13 @@ footer {
 
 footer div.info-footer {
 	background-color: var(--main-color);
+	padding: 20px;
 }
 
 footer div.sponsors {
 	background-color: var(--black-color);
-	height: 100vw;
 	width: 100%;
+	padding: 20px;
 }
 
 .info-footer hr {
@@ -468,6 +470,15 @@ hr{
 	margin: 0 auto;
 }
 
+.logo2{
+	width: 250px;
+	height: 80px;
+	background: url('images/icons/logo2.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+}
 
 /* --------------- MOBILE SUB PAGE STYLES -----------------------------*/
 /* --------------- GLOBAL MOBILE SUB PAGE STYLES -----------------------------*/
@@ -476,7 +487,7 @@ hr{
 	height: 75vw;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 114%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1032,7 +1043,7 @@ td {
 	height: 35vw;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 114%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1049,7 +1060,7 @@ td {
 }
 
 .sub-header {
-	bottom: 10%;
+	bottom: 35%;
 	color: var(--text-highlight-color);
 	position: absolute;
 	font-size: 8vw;
