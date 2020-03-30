@@ -207,7 +207,7 @@ div.nav-overlay nav ul {
 }
 
 a:hover {
-	color: var(--main-color) !important;
+	border-bottom: solid 2px #fff !important;
 }
 
 div.nav-overlay nav ul li a {
