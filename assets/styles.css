@@ -59,6 +59,7 @@ h1 {
 	font-weight: lighter;
 	line-height: 1.208;
 	z-index: 0;
+	text-transform: uppercase;
 }
 
 h1 em {
@@ -344,6 +345,7 @@ div.lang{
 	background-color: var(--dark-color);
 	z-index: 2;
 	position: relative;
+	padding-bottom: 50px;
 }
 
 article {
@@ -413,7 +415,8 @@ footer {
 }
 
 .info-footer i{
-	width: 60px;
+	font-size: 60px;
+	margin: 10px 10px;
 }
 
 .info-footer hr{
@@ -863,6 +866,12 @@ td {
 		top: 30px;
 		right: 70px;
 	}
+	
+	div.lang {
+		right: 13px;
+		top: 18px;
+	}
+	
 	div.top-bar p {
 		font-size: 27px;
 	}
@@ -1062,11 +1071,41 @@ td {
 		display: block;
 		float: left;
 		width: 100%;
+		text-align: center;
+	}
+	
+	section.newsletter p{
+		width: 100%;
 	}
 
 	.newsletter div.input-container{
 		display: block;
-		width: 50vw;
+		width: 500px;
+		margin: 0 auto;
+		height: 80px;
+		background-color: var(--main-color);
+		border-radius: 14px;
+		position: relative;
+	}
+	
+	.newsletter div.input-container input{
+		position: absolute;
+		left: 10px;
+		border-radius: 14px;
+		top: 10px;
+		height: 60px;
+		width: 75%;
+		padding: 0 20px 0;
+		background-color: var(--dark-color);
+	}
+	
+	.newsletter div.input-container input::placeholder{
+		font-size: 20px;
+		font-family: var(--secondary-font);
+	}
+	
+	.newsletter div.input-container div{
+		
 	}
 	
 	footer{
