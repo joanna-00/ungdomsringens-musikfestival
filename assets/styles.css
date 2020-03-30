@@ -571,6 +571,7 @@ textarea {
 	margin-top: 3vw;
 	border-radius: 5px;
 	color: white;
+	border: none;
 }
 
 input {
@@ -579,6 +580,7 @@ input {
 	height: 7vw;
 	color: white;
 	border-radius: 2px;
+	border: none;
 }
 
 .btn {
@@ -694,6 +696,23 @@ textarea[type=text] {
 	overflow: scroll;
 	position: relative;
 }
+
+.scrollable::-webkit-scrollbar {
+	/* display: none; */
+  }
+
+.scrollable::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+	background: transparent
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px;
+  }
 
 .scroll-arrow-wrapper {
 	position: absolute;
@@ -945,7 +964,7 @@ td {
 	}
 	
 	.content section{
-		width: 1000px;
+		/* width: 1000px; */
 		margin: 0 auto 50px;
 	}
 	
@@ -1063,8 +1082,8 @@ td {
 
 .sub-section {
 	margin-bottom: 200px;
-    width: 75vw;
-    margin: 8vw auto;
+    /* width: 75vw; */
+    /* margin: 8vw auto; */
 }
 
 .flexbox {
@@ -1120,7 +1139,6 @@ textarea {
 	margin-top: 2vw;
 	border-radius: 5px;
 	color: white;
-	border: none;
 }
 
 input {
@@ -1129,7 +1147,6 @@ input {
 	height: 4vw;
 	color: white;
 	border-radius: 2px;
-	border: none;
 }
 
 .btn {
