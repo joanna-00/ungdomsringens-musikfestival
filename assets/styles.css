@@ -711,7 +711,7 @@ section.sub-sectiion>hr:last-of-type {
 
 .item-description {
 	line-height: 1.8;
-	font-family: var(--primary-font);
+	font-family: var(--secondary-font);
 	font-size: 3.8vw;
 	font-weight: lighter;
 	height: 40vw;
@@ -1431,7 +1431,7 @@ td {
 
 	.item-description {
 		line-height: 1.8;
-		font-family: var(--primary-font);
+		font-family: var(--secondary-font);;
 		font-size: 2.2vw;
 		font-weight: lighter;
 		height: 20vw;
