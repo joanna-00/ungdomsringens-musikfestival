@@ -486,7 +486,7 @@ section.newsletter p{
 }
 
 .newsletter div.input-container div{
-	background: url('images/icons/arrow-right.svg');
+	background: url('images/icons/arrow-right2.svg');
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1297,14 +1297,14 @@ td {
 	}
 	
 	.newsletter div.input-container div{
-		background: url('images/icons/arrow-right.svg');
+		background: url('images/icons/arrow-right2.svg');
 		background-size: contain;
-		background-position: center bottom;
+		background-position: center;
 		background-repeat: no-repeat;
 		width: 15%;
 		position: absolute;
 		right: 20px;
-		height: 80%;
+		height: 100%;
 		font-family: var(--primary-font);
 	}
 	
