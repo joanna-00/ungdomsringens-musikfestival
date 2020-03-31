@@ -731,6 +731,7 @@ section.sub-sectiion>hr:last-of-type {
 	transition-property: height, opacity;
 	transition-duration: 1s, 1s;
 	margin: 0;
+	padding-bottom: 50px;
 }
 
 .hidden-display {
@@ -739,9 +740,14 @@ section.sub-sectiion>hr:last-of-type {
 	opacity: 0 !important;
 	/* overflow: hidden; */
 	margin: 0;
+	padding: 0;
 	/* transition-property: height;
 	transition-duration: 1s; */
 	/* display: none; */
+}
+
+.item-description a {
+	color:  var(--p-text);
 }
 
 .hidden {
