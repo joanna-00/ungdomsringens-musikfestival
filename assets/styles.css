@@ -695,7 +695,7 @@ hr {
 
 .article-header {
 	margin: 0;
-	padding: 2vw 0;
+	padding: 4.5vw 0;
 	display: block;
 	font-size: 5vw;
 	width: 100%;
@@ -1430,6 +1430,7 @@ td {
 	.article-header {
 		font-size: 2vw;
 		width: 100%;
+		padding: 2vw 0;
 	}
 
 	i.fas.fa-chevron-down {
