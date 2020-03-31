@@ -554,6 +554,10 @@ footer div.sponsors {
 	padding: 20px;
 }
 
+.sponsors h2 {
+	margin-top: 3vw;
+}
+
 footer hr {
 	margin: 5vw 0;
 }
