@@ -478,7 +478,7 @@ section.newsletter p{
 }
 
 .newsletter div.input-container div{
-	background: url('images/icons/arrow-right.svg');
+	background: url('images/icons/arrow-right2.svg');
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -546,6 +546,10 @@ footer div.sponsors {
 	padding: 20px;
 }
 
+.sponsors h2 {
+	margin-top: 3vw;
+}
+
 footer hr {
 	margin: 5vw 0;
 }
@@ -610,7 +614,6 @@ hr {
 }
 
 .logo2 {
-	width: 350px;
 	height: 80px;
 	background: url('images/icons/logo2.svg');
 	background-size: contain;
@@ -692,7 +695,7 @@ strong {
 
 .article-header {
 	margin: 0;
-	padding: 4vw 0;
+	padding: 4.5vw 0;
 	display: block;
 	font-size: 5vw;
 	width: 100%;
@@ -766,6 +769,7 @@ input {
 	color: white;
 	border-radius: 2px;
 	border: none;
+	font-size: 20px;
 }
 
 .btn {
@@ -1308,14 +1312,14 @@ td {
 	}
 	
 	.newsletter div.input-container div{
-		background: url('images/icons/arrow-right.svg');
+		background: url('images/icons/arrow-right2.svg');
 		background-size: contain;
-		background-position: center bottom;
+		background-position: center;
 		background-repeat: no-repeat;
 		width: 15%;
 		position: absolute;
 		right: 20px;
-		height: 80%;
+		height: 100%;
 		font-family: var(--primary-font);
 	}
 	
@@ -1441,6 +1445,7 @@ td {
 	.article-header {
 		font-size: 2vw;
 		width: 100%;
+		padding: 2vw 0;
 	}
 
 	i.fas.fa-chevron-down {
@@ -1468,7 +1473,7 @@ td {
 		transition-property: height, opacity;
 		transition-duration: .7s, .7s;
 		margin: 0;
-		max-width: 60%;
+		max-width: 70%;
 	}
 
 	.hidden {
