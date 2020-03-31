@@ -95,12 +95,12 @@ function toggleTabs(elem) {
 	elem.addEventListener('click', () => {
 
 		
-		if (elem.parentElement.querySelector('p').classList.contains('hidden-display')) {
+		if (elem.parentElement.querySelector('.item-description').classList.contains('hidden-display')) {
 			// if(elem.parentElement.getElementsByTagName('p')[0].style.height == 0) {
 
 			let parentContainer = elem.parentElement;
 
-			let siblingP = elem.parentElement.getElementsByTagName('p')[0]
+			let siblingP = elem.parentElement.querySelector('.item-description')
 			// let id = siblingP.getAttribute('id');
 			// siblingP.style.transition = "height, 1s, ease-out"
 
@@ -120,7 +120,7 @@ function toggleTabs(elem) {
 		else {
 			let parentContainer = elem.parentElement;
 
-			let siblingP = elem.parentElement.getElementsByTagName('p')[0]
+			let siblingP = elem.parentElement.querySelector('.item-description')
 			console.log(siblingP)
 			// siblingP.style.height = 0;
 			parentContainer.style.overflow = "hidden"

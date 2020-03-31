@@ -682,6 +682,14 @@ hr {
 	opacity: .7;
 }
 
+.buffer {
+	margin-bottom: 100px;
+}
+
+strong {
+	color: var(--main-color);
+}
+
 .article-header {
 	margin: 0;
 	padding: 4vw 0;
@@ -713,6 +721,7 @@ section.sub-sectiion>hr:last-of-type {
 	font-family: var(--secondary-font);
 	font-size: 3.4vw;
 	font-weight: lighter;
+	color: var(--p-text);
 	/* height: 100%; */
 	/* min-height: 40vw; */
 	opacity: 1;

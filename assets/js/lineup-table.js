@@ -40,7 +40,7 @@ function getBandsFromWP() {
             // errorMessage('An error has occured while getting the data. Please try again later!');
         }
     }
-    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}`, true);
+    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}&per_page=100`, true);
     xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
     xhttp.send();
 }
@@ -57,7 +57,7 @@ function structureBands() {
         // console.log(array)
         bands = {...array}
         // let object = Object.assign(array);
-        console.log(bands)
+        // console.log(bands)
     })
 }
 
@@ -288,5 +288,5 @@ function loopTableRows(table, name, stage, time, day) {
 function handleNames(name) {
     names.push(name)
     names.sort()
-    console.log(names)
+    // console.log(names)
 }
