@@ -334,9 +334,10 @@ div.lang {
 	height: 100vh;
 	position: relative;
 	top: 0;
-	background: url('images/fb-images/banner1.jpg');
+	background: url('images/fb-images/banner2.jpg');
 	background-size: 150%;
 	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -544,6 +545,11 @@ hr {
 	margin: 0;
 }
 
+.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5, 
+.sponsors > h2 {
+	opacity: .5;
+}
+
 .sponsor1 {
 	width: 150px;
 	height: 80px;
@@ -595,7 +601,7 @@ hr {
 }
 
 .logo2 {
-	width: 250px;
+	width: 350px;
 	height: 80px;
 	background: url('images/icons/logo2.svg');
 	background-size: contain;
@@ -1250,10 +1256,43 @@ td {
 		height: 100%;
 	}
 	
+	.info-footer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+	}
+
+	footer nav {
+		font-size: 25px;
+	}
+	
+	footer p {
+		margin: 0;
+	}
+
+
+	footer .info-footer hr {
+		transform: rotate(90deg);
+		width: 20vw;
+		max-width: 10%;
+		height: 0px;
+	}
+
 	footer {
 		display: block;
 		float: left;
 		width: 100vw;
+	}
+
+	.sponsor-logos {
+		display: flex;
+		justify-content: space-between;
+		margin: 50px 0;
+	}
+
+	.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5 {
+		width: 100px;
 	}
 
 	/* --------------- GLOBAL DESKTOP DESKTOP STYLES ----------------------*/
@@ -1754,14 +1793,12 @@ td {
 		font-size: 20px;
 	}
 
-	.newsletter div.input-container div {}
-
-	footer {
-
-		width: 100vw;
+	.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5 {
+		width: 200px;
 	}
 
-	/* --------------- GLOBAL DESKTOP DESKTOP STYLES ----------------------*/
+
+	/* --------------- GLOBAL LARGE DESKTOP STYLES ----------------------*/
 	.sub-banner {
 		height: 20vw;
 		top: 0;
@@ -1808,7 +1845,7 @@ td {
 	}
 
 
-	/* --------------- SIGNUP/INFO PAGE DESKTOP -----------------------------*/
+	/* --------------- SIGNUP/INFO PAGE LARGE DESKTOP -----------------------------*/
 
 	hr {
 		width: 100%;
@@ -1837,7 +1874,7 @@ td {
 	}
 
 
-	/* --------------- CONTACT PAGE DESKTOP -----------------------------*/
+	/* --------------- CONTACT PAGE LARGE DESKTOP -----------------------------*/
 
 	textarea {
 		padding: 1vw;
@@ -1944,11 +1981,10 @@ td {
 		margin-left: 2vw;
 	}
 
-	/* LANDING PAGE DESKTOP */
+	/* LANDING PAGE LARGE DESKTOP */
 
 	table {
 		font-size: 1.6vw;
-
 	}
 
 	.scroll-arrow {
