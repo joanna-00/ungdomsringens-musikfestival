@@ -19,11 +19,11 @@ function getBandsFromWP() {
         if (this.readyState == 4 && this.status == 200) {
             try {
                 bands = JSON.parse(this.responseText);
-                console.log(bands)
+                // console.log(bands)
 
                 structureBands()
                 let bandEntries = Object.entries(bands)
-                console.log(bandEntries)
+                // console.log(bandEntries)
 
                 for (const [nameObject, {name, stage, time, day}] of bandEntries) {
                     console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
@@ -40,7 +40,7 @@ function getBandsFromWP() {
             // errorMessage('An error has occured while getting the data. Please try again later!');
         }
     }
-    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}&per_page=100`, true);
+    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}&per_page=101`, true);
     xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
     xhttp.send();
 }
@@ -76,43 +76,6 @@ function structureBands() {
 //         time: '11.00',
 //         day: '1'
 
-//     },
-//     band3: {
-//         name: 'Z Band3',
-//         stage: 'Royal Stage',
-//         time: '12.30',
-//         day: '2'
-//     },
-//     band4: {
-//         name: 'L Band4',
-//         stage: 'Joule',
-//         time: '14.00',
-//         day: '1'
-//     },
-//     band5: {
-//         name: 'P Band1',
-//         stage: 'Royal Stage',
-//         time: '10.00',
-//         day: '1'
-//     },
-//     band6: {
-//         name: 'I Band2',
-//         stage: 'Skraaen',
-//         time: '10.00',
-//         day: '1'
-
-//     },
-//     band7: {
-//         name: 'VBand3',
-//         stage: 'Royal Stage',
-//         time: '16.00',
-//         day: '2'
-//     },
-//     band8: {
-//         name: 'Band4',
-//         stage: 'Joule',
-//         time: '13.00',
-//         day: '2'
 //     }
 // }
 
@@ -129,43 +92,6 @@ function structureBands() {
 //         time: '11.00',
 //         day: '1'
 
-//     },
-//     {
-//         name: 'Z Band3',
-//         stage: 'Royal Stage',
-//         time: '12.30',
-//         day: '2'
-//     },
-//     {
-//         name: 'L Band4',
-//         stage: 'Joule',
-//         time: '14.00',
-//         day: '1'
-//     },
-//     {
-//         name: 'P Band1',
-//         stage: 'Royal Stage',
-//         time: '10.00',
-//         day: '1'
-//     },
-//     {
-//         name: 'I Band2',
-//         stage: 'Skraaen',
-//         time: '10.00',
-//         day: '1'
-
-//     },
-//     {
-//         name: 'VBand3',
-//         stage: 'Royal Stage',
-//         time: '16.00',
-//         day: '2'
-//     },
-//     {
-//         name: 'Band4',
-//         stage: 'Joule',
-//         time: '13.00',
-//         day: '2'
 //     }
 // ]
 
@@ -263,13 +189,13 @@ function loopTableRows(table, name, stage, time, day) {
     table.forEach(row => {
         let rowValue = row.getAttribute('data-value');
         if (rowValue == stage) {
-            console.log('scene match found')
+            // console.log('scene match found')
             const cells = row.querySelectorAll('td');
             // LOOP THROUGH TABLE CELLS TO FIND ONE MATCHING time
             cells.forEach(cell => {
                 let cellValue = cell.getAttribute('data-value');
                 if (cellValue == time) {
-                    console.log('time match found')
+                    // console.log('time match found')
                     cell.innerHTML = `${name}`
                 }
             });
