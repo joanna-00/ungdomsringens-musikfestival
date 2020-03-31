@@ -713,8 +713,8 @@ section.sub-sectiion>hr:last-of-type {
 
 .item-description {
 	line-height: 1.8;
-	font-family: var(--primary-font);
-	font-size: 3.8vw;
+	font-family: var(--secondary-font);
+	font-size: 3.4vw;
 	font-weight: lighter;
 	height: 40vw;
 	opacity: 1;
@@ -840,11 +840,17 @@ textarea[type=text] {
 .contact-info p {
 	font-size: 3.5vw;
 }
-
 .contact-image {
-	width: 45vw;
-	height: 55vw;
-	border: 1px solid white;
+	width: 40vw;
+    height: 50vw;
+}
+
+.contact-image img{
+	height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px -5px 25px #000;
+    top: 0;
 }
 
 .contact-reps {
@@ -1219,6 +1225,7 @@ td {
 
 	.sub-tip {
 		font-size: 20px;
+		font-family: var(--secondary-font);
 	}
 
 	.article-header {
@@ -1386,7 +1393,7 @@ td {
 
 	.sub-tip {
 		color: var(--p-text);
-		font-family: var(--primary-font);
+		font-family: var(--secondary-font);
 		font-size: 2.2vw;
 		font-weight: lighter;
 		margin-top: 0;
@@ -1433,8 +1440,8 @@ td {
 
 	.item-description {
 		line-height: 1.8;
-		font-family: var(--primary-font);
-		font-size: 2.2vw;
+		font-family: var(--secondary-font);;
+		font-size: 1.6vw;
 		font-weight: lighter;
 		height: 20vw;
 		opacity: 1;
@@ -1565,7 +1572,7 @@ td {
 	.contact-image {
 		width: 14vw;
 		height: 16vw;
-		border: 1px solid white;
+		
 	}
 
 	#contact-sub-section {
@@ -1876,6 +1883,7 @@ td {
 		font-size: 1.6vw;
 		margin-top: 0;
 		line-height: 1.5;
+		font-family: var(--secondary-font);
 	}
 
 	.sub-section {
@@ -1908,6 +1916,7 @@ td {
 
 	.item-description {
 		line-height: 1.8;
+		font-family: var(--secondary-font);
 		font-size: 1.6vw;
 		height: 20vw;
 		margin: 0;
@@ -1996,6 +2005,7 @@ td {
 
 	.contact-info p {
 		font-size: 1vw;
+		
 	}
 
 	.contact-image {
