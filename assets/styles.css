@@ -712,7 +712,7 @@ section.sub-sectiion>hr:last-of-type {
 .item-description {
 	line-height: 1.8;
 	font-family: var(--secondary-font);
-	font-size: 3.8vw;
+	font-size: 3.4vw;
 	font-weight: lighter;
 	height: 40vw;
 	opacity: 1;
@@ -1217,6 +1217,7 @@ td {
 
 	.sub-tip {
 		font-size: 20px;
+		font-family: var(--secondary-font);
 	}
 
 	.article-header {
@@ -1384,7 +1385,7 @@ td {
 
 	.sub-tip {
 		color: var(--p-text);
-		font-family: var(--primary-font);
+		font-family: var(--secondary-font);
 		font-size: 2.2vw;
 		font-weight: lighter;
 		margin-top: 0;
@@ -1432,7 +1433,7 @@ td {
 	.item-description {
 		line-height: 1.8;
 		font-family: var(--secondary-font);;
-		font-size: 2.2vw;
+		font-size: 1.6vw;
 		font-weight: lighter;
 		height: 20vw;
 		opacity: 1;
@@ -1874,6 +1875,7 @@ td {
 		font-size: 1.6vw;
 		margin-top: 0;
 		line-height: 1.5;
+		font-family: var(--secondary-font);
 	}
 
 	.sub-section {
@@ -1906,6 +1908,7 @@ td {
 
 	.item-description {
 		line-height: 1.8;
+		font-family: var(--secondary-font);
 		font-size: 1.6vw;
 		height: 20vw;
 		margin: 0;
@@ -1994,6 +1997,7 @@ td {
 
 	.contact-info p {
 		font-size: 1vw;
+		
 	}
 
 	.contact-image {
