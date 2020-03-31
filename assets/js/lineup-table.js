@@ -4,59 +4,170 @@ const convertToKebabCase = (string) => {
     return string.replace(/\s+/g, '-').toLowerCase();
   }
 
+const apiUrl = 'http://joajan.dreamhosters.com/wp-json/wp/v2/';
+const apiKey = 'W1hYv3UyKlQTc12iLgWuhITHLWfhNYwC';
+const categoryBandsId = 4;
+let bands;
+let names = [];
 
-const bands = {
-    band1: {
-        name: 'A Band1',
-        stage: 'Royal Stage',
-        time: '10.00',
-        day: '1'
-    },
-    band2: {
-        name: 'E Band2',
-        stage: 'Skraaen',
-        time: '11.00',
-        day: '1'
+getBandsFromWP()
 
-    },
-    band3: {
-        name: 'Z Band3',
-        stage: 'Royal Stage',
-        time: '12.30',
-        day: '2'
-    },
-    band4: {
-        name: 'L Band4',
-        stage: 'Joule',
-        time: '14.00',
-        day: '1'
-    },
-    band5: {
-        name: 'P Band1',
-        stage: 'Royal Stage',
-        time: '10.00',
-        day: '1'
-    },
-    band6: {
-        name: 'I Band2',
-        stage: 'Skraaen',
-        time: '10.00',
-        day: '1'
+function getBandsFromWP() {
+    console.log('getBandsFromWP()');
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            try {
+                bands = JSON.parse(this.responseText);
+                console.log(bands)
 
-    },
-    band7: {
-        name: 'VBand3',
-        stage: 'Royal Stage',
-        time: '16.00',
-        day: '2'
-    },
-    band8: {
-        name: 'Band4',
-        stage: 'Joule',
-        time: '13.00',
-        day: '2'
+                structureBands()
+                let bandEntries = Object.entries(bands)
+                console.log(bandEntries)
+
+                for (const [nameObject, {name, stage, time, day}] of bandEntries) {
+                    console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
+                    matchStage(name, stage, time, day)
+                    handleNames(name)
+                  }
+            } catch (error) {
+                console.log(error)
+                // errorMessage(`Error parsing JSON: ${error}`);
+            }
+        }
+        if (this.readyState == 4 && this.status > 400) {
+            console.log('error 400')
+            // errorMessage('An error has occured while getting the data. Please try again later!');
+        }
     }
+    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}`, true);
+    xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
+    xhttp.send();
 }
+
+// console.log(bands)
+// let bandEntries = Object.entries(bands)
+// console.log(bandEntries)
+
+function structureBands() {
+    let array = []
+    bands.forEach(elem => {
+        // console.log(elem)
+        array.push(elem.acf.band_info)
+        // console.log(array)
+        bands = {...array}
+        // let object = Object.assign(array);
+        console.log(bands)
+    })
+}
+
+// debugger
+
+// const bands = {
+//     band1: {
+//         name: 'A Band1',
+//         stage: 'Royal Stage',
+//         time: '10.00',
+//         day: '1'
+//     },
+//     band2: {
+//         name: 'E Band2',
+//         stage: 'Skraaen',
+//         time: '11.00',
+//         day: '1'
+
+//     },
+//     band3: {
+//         name: 'Z Band3',
+//         stage: 'Royal Stage',
+//         time: '12.30',
+//         day: '2'
+//     },
+//     band4: {
+//         name: 'L Band4',
+//         stage: 'Joule',
+//         time: '14.00',
+//         day: '1'
+//     },
+//     band5: {
+//         name: 'P Band1',
+//         stage: 'Royal Stage',
+//         time: '10.00',
+//         day: '1'
+//     },
+//     band6: {
+//         name: 'I Band2',
+//         stage: 'Skraaen',
+//         time: '10.00',
+//         day: '1'
+
+//     },
+//     band7: {
+//         name: 'VBand3',
+//         stage: 'Royal Stage',
+//         time: '16.00',
+//         day: '2'
+//     },
+//     band8: {
+//         name: 'Band4',
+//         stage: 'Joule',
+//         time: '13.00',
+//         day: '2'
+//     }
+// }
+
+// const bands = [
+//     {
+//         name: 'A Band1',
+//         stage: 'Royal Stage',
+//         time: '10.00',
+//         day: '1'
+//     },
+//     {
+//         name: 'E Band2',
+//         stage: 'Skraaen',
+//         time: '11.00',
+//         day: '1'
+
+//     },
+//     {
+//         name: 'Z Band3',
+//         stage: 'Royal Stage',
+//         time: '12.30',
+//         day: '2'
+//     },
+//     {
+//         name: 'L Band4',
+//         stage: 'Joule',
+//         time: '14.00',
+//         day: '1'
+//     },
+//     {
+//         name: 'P Band1',
+//         stage: 'Royal Stage',
+//         time: '10.00',
+//         day: '1'
+//     },
+//     {
+//         name: 'I Band2',
+//         stage: 'Skraaen',
+//         time: '10.00',
+//         day: '1'
+
+//     },
+//     {
+//         name: 'VBand3',
+//         stage: 'Royal Stage',
+//         time: '16.00',
+//         day: '2'
+//     },
+//     {
+//         name: 'Band4',
+//         stage: 'Joule',
+//         time: '13.00',
+//         day: '2'
+//     }
+// ]
 
 
 
@@ -126,14 +237,14 @@ function drawTable(tableRows, dayStart, dayEnd) {
     }
 }
 
-drawTable(tableRows1, '9.00', '22.00')
-drawTable(tableRows2, '10.00', '17.00')
+drawTable(tableRows1, '19.00', '24.00')
+drawTable(tableRows2, '10.30', '23.00')
 
 
 // DESTRUCTURE BANDS OBJECT
 
-const bandEntries = Object.entries(bands)
-console.log(bandEntries)
+// let bandEntries = Object.entries(bands)
+// console.log(bandEntries)
 
 
 const matchStage = (name, stage, time, day) => {
@@ -166,13 +277,13 @@ function loopTableRows(table, name, stage, time, day) {
     });
 }
 
-let names = [];
 
-for (const [nameObject, {name, stage, time, day}] of bandEntries) {
-    console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
-    matchStage(name, stage, time, day)
-    handleNames(name)
-  }
+
+// for (const [nameObject, {name, stage, time, day}] of bandEntries) {
+//     console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
+//     matchStage(name, stage, time, day)
+//     handleNames(name)
+//   }
 
 function handleNames(name) {
     names.push(name)

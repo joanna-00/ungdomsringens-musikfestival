@@ -46,25 +46,25 @@ function setUpInfoTabs() {
 
 	// const itemDescriptions = document.querySelectorAll('.item-description');
 	// const [ info1, info2, info3, info4, info5 ] = itemDescriptions;
-	let info1 = document.getElementById('info1')
-	let info2 = document.getElementById('info2')
-	let info3 = document.getElementById('info3')
-	let info4 = document.getElementById('info4')
-	let info5 = document.getElementById('info5')
+	// let info1 = document.getElementById('info1')
+	// let info2 = document.getElementById('info2')
+	// let info3 = document.getElementById('info3')
+	// let info4 = document.getElementById('info4')
+	// let info5 = document.getElementById('info5')
 
-	let info1Height = info1.scrollHeight;
-	let info2Height = info2.scrollHeight;
-	let info3Height = info3.scrollHeight;
-	let info4Height = info4.scrollHeight;
-	let info5Height = info5.scrollHeight;
+	// let info1Height = info1.scrollHeight;
+	// let info2Height = info2.scrollHeight;
+	// let info3Height = info3.scrollHeight;
+	// let info4Height = info4.scrollHeight;
+	// let info5Height = info5.scrollHeight;
 	
-	// console.log(info2)
+	// // console.log(info2)
 
-	info1.classList.add('hidden-display')
-	info2.classList.add('hidden-display')
-	info3.classList.add('hidden-display')
-	info4.classList.add('hidden-display')
-	info5.classList.add('hidden-display')
+	// info1.classList.add('hidden-display')
+	// info2.classList.add('hidden-display')
+	// info3.classList.add('hidden-display')
+	// info4.classList.add('hidden-display')
+	// info5.classList.add('hidden-display')
 
 	// itemDescriptions.forEach(elem => {
 	// 	let parentContainer = elem.parentElement;
