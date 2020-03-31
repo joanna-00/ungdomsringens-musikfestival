@@ -392,10 +392,12 @@ article {
 
 .img-wrap-artists {
 	width: 100%;
-	height: 650px;
+	min-height: 650px;
 	display: block;
 	float: left;
 	padding: 0 25px;
+	margin-bottom: 20px;
+	
 }
 
 .img-wrap-artists img:last-child {
@@ -409,6 +411,10 @@ img {
 	display: block;
 	top: -75px;
 	position: relative;
+}
+
+.img-wrap-artists article{
+	padding: 0;
 }
 
 .img-wrap-artists img {
@@ -488,6 +494,10 @@ section.newsletter p{
 	position: absolute;
 	right: 12px;
 	height: 100%;
+}
+
+.newsletter div.input-container div p{
+	font-family: var(--primary-font);
 }
 
 /* --------------- MOBILE FOOTER STYLES -----------------------*/
@@ -1044,6 +1054,28 @@ td {
 		padding-top: 5vw;
 		float: right;
 	}
+	
+	.img-wrap-artists{
+		padding: 0 5vw;
+	}
+	
+	.img-wrap-artists article{
+		width: 40vw;
+		padding: 0 5vw 0 0;
+	}
+	
+	.img-wrap-artists img{
+		width: 35vw;
+		height: 35vw;
+		float: right;
+		margin-top: 50px;
+	}
+	
+	.img-wrap-artists img:last-child{
+		width: 35vw;
+		height: 35vw;
+		float: left;
+	}
 
 	.banner {
 		background: url('images/fb-images/banner2.jpg');
@@ -1108,6 +1140,7 @@ td {
 		display: block;
 		margin: 50px auto 0;
 		width: 90vw;
+		min-height: 45vw;
 	}
 
 	.countdown-wrap {
@@ -1248,12 +1281,13 @@ td {
 	.newsletter div.input-container div{
 		background: url('images/icons/arrow-right.svg');
 		background-size: contain;
-		background-position: center;
+		background-position: center bottom;
 		background-repeat: no-repeat;
 		width: 15%;
 		position: absolute;
 		right: 20px;
-		height: 100%;
+		height: 80%;
+		font-family: var(--primary-font);
 	}
 	
 	.info-footer {
@@ -1787,6 +1821,10 @@ td {
 		width: 75%;
 		padding: 0 20px 0;
 		background-color: var(--dark-color);
+	}
+	
+	.newsletter div.input-container div p{
+		font-size: 17px;
 	}
 
 	.newsletter div.input-container input::placeholder {
