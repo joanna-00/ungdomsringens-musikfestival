@@ -842,7 +842,6 @@ textarea[type=text] {
 .contact-image {
 	width: 45vw;
 	height: 55vw;
-	border: 1px solid white;
 }
 
 .contact-reps {
@@ -1564,7 +1563,7 @@ td {
 	.contact-image {
 		width: 14vw;
 		height: 16vw;
-		border: 1px solid white;
+		
 	}
 
 	#contact-sub-section {
