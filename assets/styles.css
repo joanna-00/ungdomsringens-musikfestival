@@ -507,10 +507,12 @@ footer {
 	color: #fff;
 }
 
+
 .info-footer i {
 	font-size: 60px;
 	margin: 10px 10px;
 	cursor: pointer;
+	color: #fff;
 }
 
 .info-footer hr {
