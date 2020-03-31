@@ -1457,7 +1457,7 @@ td {
 		transition-property: height, opacity;
 		transition-duration: .7s, .7s;
 		margin: 0;
-		max-width: 60%;
+		max-width: 70%;
 	}
 
 	.hidden {
