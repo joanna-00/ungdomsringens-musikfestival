@@ -505,6 +505,7 @@ section.newsletter p{
 footer {
 	text-align: center;
 	color: #fff;
+	margin-top: 7vw;
 }
 
 
@@ -551,6 +552,10 @@ footer div.sponsors {
 	background-color: var(--black-color);
 	width: 100%;
 	padding: 20px;
+}
+
+footer hr {
+	margin: 5vw 0;
 }
 
 hr {
@@ -1254,7 +1259,7 @@ td {
 		float: left;
 		width: 100%;
 		text-align: center;
-		margin-bottom: 100px;
+		margin: 7vw 0;
 	}
 
 	section.newsletter p {
