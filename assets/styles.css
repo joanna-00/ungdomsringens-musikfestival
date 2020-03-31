@@ -838,10 +838,17 @@ textarea[type=text] {
 .contact-info p {
 	font-size: 3.5vw;
 }
-
 .contact-image {
-	width: 45vw;
-	height: 55vw;
+	width: 40vw;
+    height: 50vw;
+}
+
+.contact-image img{
+	height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 5px -5px 25px #000;
+    top: 0;
 }
 
 .contact-reps {
