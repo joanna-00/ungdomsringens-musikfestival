@@ -38,7 +38,7 @@ scrollArrow.forEach(elem => {
 
 
 
-
+setUpInfoTabs()
 
 function setUpInfoTabs() {
 	let arrows = document.querySelectorAll('.fa-chevron-down');
@@ -49,9 +49,7 @@ function setUpInfoTabs() {
 		toggleTabs(elem)
 	})
 
-	
-
-	// click event for headers to toggle tab
+		// click event for headers to toggle tab
 	articleHeaders.forEach(elem => {
 		toggleTabs(elem)
 	})
