@@ -1148,7 +1148,7 @@ td {
 	}
 
 	.item-a p {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	.item-a {
@@ -1802,7 +1802,7 @@ td {
 	}
 
 	.item-a p {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	.item-a {
@@ -1870,7 +1870,7 @@ td {
 	}
 
 	.content section {
-		margin: 0 auto 50px;
+		margin: 0 auto;
 	}
 
 	.sub-sectiontop,
