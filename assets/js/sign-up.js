@@ -45,15 +45,15 @@ function renderSignUpPage() {
             output += `            <p><strong>Links to the sign-up forms:</strong></p>
             <ul>
                 <li><a href="${elem.links.link_1}"
-                        target="_blank">Band Sing-up </a><i class="fas fa-external-link-alt"></i></li>
-                <li><a href="${elem.links.link_3}"
-                        target="_blank">Band Sign-up Kælderscenen (rap, rock n roll/DJ/electronica) </a><i
-                        class="fas fa-external-link-alt"></i></li>
+                        target="_blank">${elem.links.link_1_label}</a><i class="fas fa-external-link-alt"></i></li>
                 <li><a href="${elem.links.link_2}"
-                        target="_blank">Band Sign-up Caféscenen (unplugged) </a><i
+                        target="_blank">${elem.links.link_2_label}</a><i
                         class="fas fa-external-link-alt"></i></li>
                 <li><a href="${elem.links.link_3}"
-                        target="_blank">Accommodation </a><i class="fas fa-external-link-alt"></i></li>
+                        target="_blank">${elem.links.link_3_label}</a><i
+                        class="fas fa-external-link-alt"></i></li>
+                <li><a href="${elem.links.link_4}"
+                        target="_blank">${elem.links.link_4_label}</a><i class="fas fa-external-link-alt"></i></li>
             </ul>`
         }
             output +=        `</div>
