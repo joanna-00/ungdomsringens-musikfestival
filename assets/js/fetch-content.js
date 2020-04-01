@@ -4,6 +4,7 @@ const categoryBandsId = 4;
 const tagSignUpInfoId = 9;
 const tagFestivalInfoId = 5;
 const tagPracticalInfoId = 7;
+const tagLandingPageInfoId = 10;
 
 let names = [];
 
@@ -11,6 +12,7 @@ let bands;
 let signUpInfo;
 let festivalInfo;
 let practicalInfo;
+let landingPageInfo;
 
 
 function acfParser(object) {
