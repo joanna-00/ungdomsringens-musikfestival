@@ -754,6 +754,11 @@ section.sub-sectiion>hr:last-of-type {
 	display: none;
 }
 
+.fas.fa-smoking-ban {
+	font-size: 9vw;
+	color: var(--main-color);
+}
+
 /* --------------- MOBILE CONTACT SUBPAGE STYLES ---------------------*/
 
 textarea {
@@ -1486,6 +1491,11 @@ td {
 		display: none;
 	}
 
+	.fas.fa-smoking-ban {
+		font-size: 5vw;
+		color: var(--main-color);
+	}
+
 
 	/* --------------- CONTACT PAGE DESKTOP -----------------------------*/
 
@@ -1951,6 +1961,11 @@ td {
 		font-size: 1.6vw;
 		/* height: 20vw; */
 		margin: 0;
+	}
+
+	.fas.fa-smoking-ban {
+		font-size: 4vw;
+		color: var(--main-color);
 	}
 
 
