@@ -796,6 +796,7 @@ textarea {
 }
 
 input {
+	padding: 1.5vw;
 	background-color: #52465C;
 	width: 42vw;
 	height: 7vw;
@@ -1598,19 +1599,19 @@ td {
 
 	.btn {
 		background-color: var(--main-color);
-		font-family: var(--primary-font);
-		border: none;
-		color: white;
-		font-weight: bold;
-		box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .5);
-		transition: all .1s ease-out;
-		cursor: pointer;
-		margin-top: 1vw;
-		font-size: 1.5vw;
-		border-radius: 5px;
-		width: 14vw;
-		height: 4vw;
-		padding: 2.5vw;
+    	font-family: var(--primary-font);
+    	border: none;
+    	color: white;
+    	font-weight: bold;
+    	box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .5);
+    	transition: all .1s ease-out;
+    	cursor: pointer;
+    	margin-top: 1vw;
+    	font-size: 1.5vw;
+    	border-radius: 5px;
+    	width: 14vw;
+    	height: 5vw;
+    	padding: 2vw;
 	}
 
 	label {
@@ -2076,11 +2077,11 @@ td {
 
 	.btn {
 		margin-top: 1vw;
-		font-size: 1.5vw;
-		border-radius: 5px;
-		width: 14vw;
-		height: 4vw;
-		padding: 2.5vw;
+    	font-size: 1.5vw;
+    	border-radius: 5px;
+    	width: 14vw;
+    	height: 5vw;
+    	padding: 2vw;
 	}
 
 	label {
