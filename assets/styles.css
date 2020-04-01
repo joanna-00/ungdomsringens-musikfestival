@@ -1026,10 +1026,11 @@ td {
 }
 
 .no-icons{
-	width: 100%;
-	display: block;
-	float: left;
+	/* width: 100%; */
+	/* display: block; */
+	float: right;
 	margin-bottom: 20px;
+	padding: 0 5vw;
 }
 
 

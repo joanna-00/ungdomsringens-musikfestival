@@ -62,5 +62,4 @@ function renderSignUpPage() {
         outputParent.innerHTML += output
     });
     setUpInfoTabs()
-    // outputParent.innerHTML =
 }

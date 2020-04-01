@@ -57,7 +57,7 @@ function setUpInfoTabs() {
 
 function toggleTabs(elem) {
 	elem.addEventListener('click', () => {
-		console.log('clickd!')
+		// console.log('clickd!')
 		
 		if (elem.parentElement.querySelector('.item-description').classList.contains('hidden-display')) {
 			// if(elem.parentElement.getElementsByTagName('p')[0].style.height == 0) {
@@ -85,7 +85,7 @@ function toggleTabs(elem) {
 			let parentContainer = elem.parentElement;
 
 			let siblingP = elem.parentElement.querySelector('.item-description')
-			console.log(siblingP)
+			// console.log(siblingP)
 			// siblingP.style.height = 0;
 			parentContainer.style.overflow = "hidden"
 			siblingP.classList.toggle('hidden-display')
