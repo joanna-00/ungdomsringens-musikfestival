@@ -969,7 +969,48 @@ td {
 	font-weight: lighter;
 }
 
+.no-drinking{
+	background: url(images/icons/no-drinking.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
 
+.no-weed{
+	background: url(images/icons/no-weed.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
+
+.no-smoking{
+	background: url(images/icons/no-smoking.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
+
+.no-icons{
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+}
 
 
 /* --------------- GRID ITEMS -----------------------------*/
@@ -1186,7 +1227,6 @@ td {
 		display: block;
 		margin: 50px auto 0;
 		width: 90vw;
-		min-height: 45vw;
 	}
 
 	.countdown-wrap {
@@ -1495,9 +1535,19 @@ td {
 		display: none;
 	}
 
-	.fas.fa-smoking-ban {
-		font-size: 5vw;
-		color: var(--main-color);
+	.no-smoking{
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.no-drinking{
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.no-weed{
+		width: 5vw;
+		height: 5vw;
 	}
 
 
@@ -1967,9 +2017,19 @@ td {
 		margin: 0;
 	}
 
-	.fas.fa-smoking-ban {
-		font-size: 4vw;
-		color: var(--main-color);
+	.no-smoking{
+		width: 4vw;
+		height: 4vw;
+	}
+	
+	.no-drinking{
+		width: 4vw;
+		height: 4vw;
+	}
+	
+	.no-weed{
+		width: 4vw;
+		height: 4vw;
 	}
 
 
