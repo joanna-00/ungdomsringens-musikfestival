@@ -104,7 +104,7 @@ h2 em {
 
 h2.countdown {
 	text-align: center;
-	font-size: 30px;
+	font-size: 7vw;
 	color: var(--text-highlight-color);
 	margin: 50px 0;
 	text-transform: lowercase;
@@ -490,6 +490,10 @@ section.newsletter p{
 
 .newsletter div.input-container div p{
 	font-family: var(--primary-font);
+}
+
+#countdown-header {
+	text-align: center;
 }
 
 /* --------------- MOBILE FOOTER STYLES -----------------------*/
@@ -1247,7 +1251,7 @@ td {
 
 	h2.countdown {
 		position: absolute;
-		font-size: 7vw;
+		font-size: 6.5vw;
 		text-align: center;
 		width: 80vw;
 		left: 10vw;
@@ -1834,7 +1838,7 @@ td {
 	}
 
 	h2.countdown {
-		font-size: 7vw;
+		font-size: 6vw;
 		width: 80vw;
 		left: 10vw;
 		padding: 0;
