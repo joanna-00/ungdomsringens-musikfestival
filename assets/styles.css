@@ -507,6 +507,7 @@ form.newsletter p{
 	text-align: center;
 	position: absolute;
 	width: 100%;
+	display: none;
 }
 
 /* --------------- MOBILE FOOTER STYLES -----------------------*/
@@ -1407,6 +1408,10 @@ td {
 
 	.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5 {
 		width: 100px;
+	}
+	
+	#countdown-header{
+		display: block;
 	}
 
 	/* --------------- GLOBAL DESKTOP DESKTOP STYLES ----------------------*/
