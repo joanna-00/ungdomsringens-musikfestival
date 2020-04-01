@@ -1,7 +1,14 @@
 let output = document.getElementsByClassName('countdown')[0];
 
+let eventDate = "January 15, 2021";
+let eventTime = "19.00".split(".");
+let convertTime = eventTime[0] + ":" + eventTime[1] + ":00";
+//January 15, 2021 19:00:00
+let eventMS = eventDate + " " + convertTime;
 
-let start = new Date("Jan 15, 2021 19:00:00").getTime(); //This can be taken from the Wordpress
+console.log(eventMS)
+
+let start = new Date(eventMS).getTime(); //This can be taken from the Wordpress
 
 const day = (1000 * 60 * 60 * 24);
 const hour = (1000 * 60 * 60);
