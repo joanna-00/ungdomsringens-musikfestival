@@ -1,14 +1,8 @@
 // convert to kebab-case :)))
 
-const convertToKebabCase = (string) => {
-    return string.replace(/\s+/g, '-').toLowerCase();
-  }
-
-const apiUrl = 'http://joajan.dreamhosters.com/wp-json/wp/v2/';
-const apiKey = 'W1hYv3UyKlQTc12iLgWuhITHLWfhNYwC';
-const categoryBandsId = 4;
-let bands;
-let names = [];
+// const convertToKebabCase = (string) => {
+//     return string.replace(/\s+/g, '-').toLowerCase();
+//   }
 
 getBandsFromWP()
 
@@ -22,11 +16,12 @@ function getBandsFromWP() {
                 // console.log(bands)
 
                 structureBands()
+                // bands = acfParser(bands, 'band_info')
                 let bandEntries = Object.entries(bands)
                 // console.log(bandEntries)
 
                 for (const [nameObject, {name, stage, time, day}] of bandEntries) {
-                    console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
+                    // console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)
                     matchStage(name, stage, time, day)
                     handleNames(name)
                   }
@@ -40,7 +35,7 @@ function getBandsFromWP() {
             // errorMessage('An error has occured while getting the data. Please try again later!');
         }
     }
-    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}&per_page=101`, true);
+    xhttp.open('GET', `${apiUrl}posts?categories=${categoryBandsId}&per_page=100`, true);
     xhttp.setRequestHeader('Authorization', `Bearer ${apiKey}`);
     xhttp.send();
 }
@@ -61,7 +56,20 @@ function structureBands() {
     })
 }
 
-// debugger
+// function acfParser2(object, key) {
+//     let array = []
+//     object.forEach(elem => {
+//         // console.log(elem)
+//         console.log(elem.acf[`${key}`])
+//         array.push(elem.acf[`${key}`])
+//         // console.log(array)
+//         object = {...array}
+//         console.log(object)
+//         // let object = Object.assign(array);
+//         // console.log(bands)
+//     })
+//     return object
+// }
 
 // const bands = {
 //     band1: {
@@ -75,7 +83,6 @@ function structureBands() {
 //         stage: 'Skraaen',
 //         time: '11.00',
 //         day: '1'
-
 //     }
 // }
 
@@ -95,16 +102,12 @@ function structureBands() {
 //     }
 // ]
 
-
-
 const table1 = document.querySelector('table#day1')
 const table2 = document.querySelector('table#day2')
 
 const tableRows1 = table1.querySelectorAll('tr')
 const tableRows2 = table2.querySelectorAll('tr')
 // console.log(tableRows)
-
-
 
 function calculateTimes(dayStart, dayEnd) {
     let hours = [];
@@ -114,8 +117,6 @@ function calculateTimes(dayStart, dayEnd) {
     // }
     // dayStart = Number(dayStart.split('.', 1));
     dayEnd = dayEnd.split('.', 2);
-
-
 
     dayStart[0] = Number(dayStart[0])
     dayStart[1] = Number(dayStart[1])
@@ -135,9 +136,6 @@ function calculateTimes(dayStart, dayEnd) {
     console.log(hours);
     return hours
 }
-
-
-
 
 function drawTable(tableRows, dayStart, dayEnd) {
     let hours = calculateTimes(dayStart, dayEnd)
@@ -166,12 +164,10 @@ function drawTable(tableRows, dayStart, dayEnd) {
 drawTable(tableRows1, '19.00', '24.00')
 drawTable(tableRows2, '10.30', '23.00')
 
-
 // DESTRUCTURE BANDS OBJECT
 
 // let bandEntries = Object.entries(bands)
 // console.log(bandEntries)
-
 
 const matchStage = (name, stage, time, day) => {
     if (day == 1) {
@@ -183,7 +179,6 @@ const matchStage = (name, stage, time, day) => {
         loopTableRows(tableRows2, name, stage, time, day)
     }
 }
-
 
 function loopTableRows(table, name, stage, time, day) {
     table.forEach(row => {
@@ -202,8 +197,6 @@ function loopTableRows(table, name, stage, time, day) {
         }
     });
 }
-
-
 
 // for (const [nameObject, {name, stage, time, day}] of bandEntries) {
 //     console.log(`Values: ${nameObject}, ${name}, ${stage}, ${time}, ${day}`)

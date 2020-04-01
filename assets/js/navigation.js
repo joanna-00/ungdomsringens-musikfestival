@@ -5,8 +5,6 @@ let nav = document.getElementById('navigation');
 let languageBtn = document.getElementsByClassName('lang')[0];
 let popup = document.getElementsByClassName('lang-popup')[0];
 
-const arrows = document.querySelectorAll('.fa-chevron-down');
-const articleHeaders = document.querySelectorAll('.article-header');
 
 const scrollArrow = document.querySelectorAll('.scroll-arrow');
 
@@ -43,40 +41,8 @@ scrollArrow.forEach(elem => {
 
 
 function setUpInfoTabs() {
-
-	// const itemDescriptions = document.querySelectorAll('.item-description');
-	// const [ info1, info2, info3, info4, info5 ] = itemDescriptions;
-	// let info1 = document.getElementById('info1')
-	// let info2 = document.getElementById('info2')
-	// let info3 = document.getElementById('info3')
-	// let info4 = document.getElementById('info4')
-	// let info5 = document.getElementById('info5')
-
-	// let info1Height = info1.scrollHeight;
-	// let info2Height = info2.scrollHeight;
-	// let info3Height = info3.scrollHeight;
-	// let info4Height = info4.scrollHeight;
-	// let info5Height = info5.scrollHeight;
-	
-	// // console.log(info2)
-
-	// info1.classList.add('hidden-display')
-	// info2.classList.add('hidden-display')
-	// info3.classList.add('hidden-display')
-	// info4.classList.add('hidden-display')
-	// info5.classList.add('hidden-display')
-
-	// itemDescriptions.forEach(elem => {
-	// 	let parentContainer = elem.parentElement;
-	// 	parentContainer.style.overflow = "hidden";
-	// 	let finalHeight = elem.height;
-	// 	elem.classList.add('hidden-display')
-
-	// 	// elem.addEventListener('click')
-
-	// 	console.log(finalHeight);
-	// 	// elem.classList.add
-	// })
+	let arrows = document.querySelectorAll('.fa-chevron-down');
+	let articleHeaders = document.querySelectorAll('.article-header');
 
 		// click event for arrows to toggle tab
 	arrows.forEach(elem => {
@@ -93,7 +59,7 @@ function setUpInfoTabs() {
 
 function toggleTabs(elem) {
 	elem.addEventListener('click', () => {
-
+		console.log('clickd!')
 		
 		if (elem.parentElement.querySelector('.item-description').classList.contains('hidden-display')) {
 			// if(elem.parentElement.getElementsByTagName('p')[0].style.height == 0) {
@@ -132,4 +98,3 @@ function toggleTabs(elem) {
 	})
 }
 
-setUpInfoTabs()
