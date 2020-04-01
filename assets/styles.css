@@ -389,12 +389,17 @@ article {
 	float: left;
 	padding: 0 25px;
 	margin-bottom: 20px;
+	margin-top: 50px;
 	
 }
 
-.img-wrap-artists img:last-child {
+.img-wrap-artists div:last-child {
 	float: right;
 	display: block;
+	background: url(images/fb-images/nephew.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 img {
@@ -409,7 +414,7 @@ img {
 	padding: 0;
 }
 
-.img-wrap-artists img {
+.img-wrap-artists div {
 	border-radius: 24px;
 	width: 250px;
 	height: 250px;
@@ -418,6 +423,19 @@ img {
 	float: left;
 	display: block;
 	box-shadow: 5px -5px 25px #000;
+	background: url(images/fb-images/The_Minds_of_99.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0 20px;
+}
+
+.img-wrap-artists div:first-child p{
+	float: right;
+}
+
+.img-wrap-artists div p{
+	text-shadow: 1px -1px 5px black;
 }
 
 .gradient-transition-top {
@@ -1151,14 +1169,14 @@ td {
 		padding: 0 5vw 0 0;
 	}
 	
-	.img-wrap-artists img{
+	.img-wrap-artists div{
 		width: 35vw;
 		height: 35vw;
 		float: right;
 		margin-top: 50px;
 	}
 	
-	.img-wrap-artists img:last-child{
+	.img-wrap-artists div:last-child{
 		width: 35vw;
 		height: 35vw;
 		float: left;
