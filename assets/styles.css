@@ -521,7 +521,7 @@ footer {
 }
 
 .info-footer nav ul {
-	padding: 0;
+	padding: 5vw 0 0 0;
 	list-style: none;
 	color: #fff;
 }
