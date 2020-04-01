@@ -104,7 +104,7 @@ h2 em {
 
 h2.countdown {
 	text-align: center;
-	font-size: 30px;
+	font-size: 7vw;
 	color: var(--text-highlight-color);
 	margin: 50px 0;
 	text-transform: lowercase;
@@ -114,6 +114,7 @@ h3 {
 	color: var(--p-text);
 	font-size: 11px;
 	font-weight: 400;
+	text-transform: uppercase;
 }
 
 h3.date {
@@ -389,12 +390,17 @@ article {
 	float: left;
 	padding: 0 25px;
 	margin-bottom: 20px;
+	margin-top: 50px;
 	
 }
 
-.img-wrap-artists img:last-child {
+.img-wrap-artists div:last-child {
 	float: right;
 	display: block;
+	background: url(images/fb-images/nephew.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 img {
@@ -409,7 +415,7 @@ img {
 	padding: 0;
 }
 
-.img-wrap-artists img {
+.img-wrap-artists div {
 	border-radius: 24px;
 	width: 250px;
 	height: 250px;
@@ -418,6 +424,19 @@ img {
 	float: left;
 	display: block;
 	box-shadow: 5px -5px 25px #000;
+	background: url(images/fb-images/The_Minds_of_99.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 0 20px;
+}
+
+.img-wrap-artists div:first-child p{
+	float: right;
+}
+
+.img-wrap-artists div p{
+	text-shadow: 1px -1px 5px black;
 }
 
 .gradient-transition-top {
@@ -439,14 +458,14 @@ img {
 	top: -150px;
 }
 
-section.newsletter{
+form.newsletter{
 	display: block;
 	width: 100%;
 	text-align: center;
 	padding: 0 25px;
 }
 
-section.newsletter p{
+form.newsletter p{
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -477,7 +496,7 @@ section.newsletter p{
 	font-family: var(--secondary-font);
 }
 
-.newsletter div.input-container div{
+.newsletter div.input-container button{
 	background: url('images/icons/arrow-right2.svg');
 	background-size: contain;
 	background-position: center;
@@ -486,10 +505,14 @@ section.newsletter p{
 	position: absolute;
 	right: 12px;
 	height: 100%;
+	border: none;
+	cursor: pointer;
 }
 
-.newsletter div.input-container div p{
-	font-family: var(--primary-font);
+#countdown-header {
+	text-align: center;
+	position: absolute;
+	width: 100%;
 }
 
 /* --------------- MOBILE FOOTER STYLES -----------------------*/
@@ -517,7 +540,7 @@ footer {
 }
 
 .info-footer nav ul {
-	padding: 0;
+	padding: 5vw 0 0 0;
 	list-style: none;
 	color: #fff;
 }
@@ -754,6 +777,11 @@ section.sub-sectiion>hr:last-of-type {
 	display: none;
 }
 
+.fas.fa-smoking-ban {
+	font-size: 9vw;
+	color: var(--main-color);
+}
+
 /* --------------- MOBILE CONTACT SUBPAGE STYLES ---------------------*/
 
 textarea {
@@ -769,6 +797,7 @@ textarea {
 }
 
 input {
+	padding: 1.5vw;
 	background-color: #52465C;
 	width: 42vw;
 	height: 7vw;
@@ -960,7 +989,48 @@ td {
 	font-weight: lighter;
 }
 
+.no-drinking{
+	background: url(images/icons/no-drinking.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
 
+.no-weed{
+	background: url(images/icons/no-weed.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
+
+.no-smoking{
+	background: url(images/icons/no-smoking.svg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 9vw;
+	height: 9vw;
+	display: block;
+	float: left;
+	margin-right: 3vw;
+}
+
+.no-icons{
+	width: 100%;
+	display: block;
+	float: left;
+	margin-bottom: 20px;
+}
 
 
 /* --------------- GRID ITEMS -----------------------------*/
@@ -1080,7 +1150,7 @@ td {
 	}
 
 	.item-a p {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	.item-a {
@@ -1101,14 +1171,14 @@ td {
 		padding: 0 5vw 0 0;
 	}
 	
-	.img-wrap-artists img{
+	.img-wrap-artists div{
 		width: 35vw;
 		height: 35vw;
 		float: right;
 		margin-top: 50px;
 	}
 	
-	.img-wrap-artists img:last-child{
+	.img-wrap-artists div:last-child{
 		width: 35vw;
 		height: 35vw;
 		float: left;
@@ -1177,7 +1247,6 @@ td {
 		display: block;
 		margin: 50px auto 0;
 		width: 90vw;
-		min-height: 45vw;
 	}
 
 	.countdown-wrap {
@@ -1202,7 +1271,7 @@ td {
 
 	h2.countdown {
 		position: absolute;
-		font-size: 7vw;
+		font-size: 6.5vw;
 		text-align: center;
 		width: 80vw;
 		left: 10vw;
@@ -1279,7 +1348,7 @@ td {
 	}
 */
 
-	section.newsletter {
+	form.newsletter {
 		display: block;
 		float: left;
 		width: 100%;
@@ -1287,7 +1356,7 @@ td {
 		margin: 7vw 0;
 	}
 
-	section.newsletter p {
+	form.newsletter p {
 		width: 100%;
 	}
 
@@ -1317,7 +1386,7 @@ td {
 		font-family: var(--secondary-font);
 	}
 	
-	.newsletter div.input-container div{
+	.newsletter div.input-container button{
 		background: url('images/icons/arrow-right2.svg');
 		background-size: contain;
 		background-position: center;
@@ -1357,6 +1426,13 @@ td {
 		float: left;
 		width: 100vw;
 	}
+	
+	.info-footer nav ul {
+		padding: 1vw 0 0 0;
+		list-style: none;
+		color: #fff;
+	}
+	
 
 	.sponsor-logos {
 		display: flex;
@@ -1486,6 +1562,21 @@ td {
 		display: none;
 	}
 
+	.no-smoking{
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.no-drinking{
+		width: 5vw;
+		height: 5vw;
+	}
+	
+	.no-weed{
+		width: 5vw;
+		height: 5vw;
+	}
+
 
 	/* --------------- CONTACT PAGE DESKTOP -----------------------------*/
 
@@ -1509,19 +1600,19 @@ td {
 
 	.btn {
 		background-color: var(--main-color);
-		font-family: var(--primary-font);
-		border: none;
-		color: white;
-		font-weight: bold;
-		box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .5);
-		transition: all .1s ease-out;
-		cursor: pointer;
-		margin-top: 1vw;
-		font-size: 1.5vw;
-		border-radius: 5px;
-		width: 14vw;
-		height: 4vw;
-		padding: 2.5vw;
+    	font-family: var(--primary-font);
+    	border: none;
+    	color: white;
+    	font-weight: bold;
+    	box-shadow: 3px 3px 8px 0 rgba(0, 0, 0, .5);
+    	transition: all .1s ease-out;
+    	cursor: pointer;
+    	margin-top: 1vw;
+    	font-size: 1.5vw;
+    	border-radius: 5px;
+    	width: 14vw;
+    	height: 5vw;
+    	padding: 2vw;
 	}
 
 	label {
@@ -1720,7 +1811,7 @@ td {
 	}
 
 	.item-a p {
-		padding-bottom: 50px;
+		padding-bottom: 20px;
 	}
 
 	.item-a {
@@ -1774,7 +1865,7 @@ td {
 	}
 
 	h2.countdown {
-		font-size: 7vw;
+		font-size: 6vw;
 		width: 80vw;
 		left: 10vw;
 		padding: 0;
@@ -1788,7 +1879,7 @@ td {
 	}
 
 	.content section {
-		margin: 0 auto 50px;
+		margin: 0 auto;
 	}
 
 	.sub-sectiontop,
@@ -1837,11 +1928,11 @@ td {
 	}
 */
 
-	section.newsletter {
+	form.newsletter {
 		width: 100%;
 	}
 
-	section.newsletter p {
+	form.newsletter p {
 		width: 100%;
 	}
 
@@ -1861,10 +1952,6 @@ td {
 		width: 75%;
 		padding: 0 20px 0;
 		background-color: var(--dark-color);
-	}
-	
-	.newsletter div.input-container div p{
-		font-size: 17px;
 	}
 
 	.newsletter div.input-container input::placeholder {
@@ -1953,6 +2040,21 @@ td {
 		margin: 0;
 	}
 
+	.no-smoking{
+		width: 4vw;
+		height: 4vw;
+	}
+	
+	.no-drinking{
+		width: 4vw;
+		height: 4vw;
+	}
+	
+	.no-weed{
+		width: 4vw;
+		height: 4vw;
+	}
+
 
 	/* --------------- CONTACT PAGE LARGE DESKTOP -----------------------------*/
 
@@ -1972,11 +2074,11 @@ td {
 
 	.btn {
 		margin-top: 1vw;
-		font-size: 1.5vw;
-		border-radius: 5px;
-		width: 14vw;
-		height: 4vw;
-		padding: 2.5vw;
+    	font-size: 1.5vw;
+    	border-radius: 5px;
+    	width: 14vw;
+    	height: 5vw;
+    	padding: 2vw;
 	}
 
 	label {
