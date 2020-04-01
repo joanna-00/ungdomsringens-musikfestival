@@ -1424,6 +1424,13 @@ td {
 		float: left;
 		width: 100vw;
 	}
+	
+	.info-footer nav ul {
+		padding: 1vw 0 0 0;
+		list-style: none;
+		color: #fff;
+	}
+	
 
 	.sponsor-logos {
 		display: flex;
